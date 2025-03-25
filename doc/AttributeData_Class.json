@@ -1,0 +1,25 @@
+{
+  "className": "AttributeData_Class",
+  "url": "https://docs.derivative.ca/AttributeData_Class",
+  "content": {
+    "title": "AttributeData Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "val": {
+        "title": "",
+        "content": "val → float | int | str | tuple | TDU.Position | TDU.Vector (Read Only): The set of values contained within this object.  Dependent on the type of attribute, it may return a float, integer, string, tuple, Position, or Vector.  For example Normal attribute data is expressed as a Vector, while Position attribute data is expressed as a Position."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "className": "Sequence_Class",
+  "url": "https://docs.derivative.ca/Sequence_Class",
+  "content": {
+    "title": "Sequence Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "blockSize": {
+        "title": "",
+        "content": "blockSize → int : Get or set the sequence blocksize, which is the number of ParGroups in the block."
+      },
+      "blocks": {
+        "title": "",
+        "content": "blocks → list[SequenceBlock] (Read Only): The set of all blocks in this sequence. A block is a set of parameters which can be repeated in an operator. See SequenceBlock class."
+      },
+      "maxBlocks": {
+        "title": "",
+        "content": "maxBlocks → int | None (Read Only): The maximum number of blocks allowed in the sequence, or None if limitless."
+      },
+      "name": {
+        "title": "",
+        "content": "name → str : Get or set the sequence name, which affects all its parameter names."
+      },
+      "numBlocks": {
+        "title": "",
+        "content": "numBlocks → int : Get or set the total number of parameter blocks in this sequence."
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "blockPars": {
+        "title": "",
+        "content": "blockPars → list (Read Only): An intermediate parameter collection object, from which specific sequence parameters can be found.\nReturns a list of one parameter from each block.\n\nn.seq.Info.blockPars.Tx\nn.seq.Info.blockPars.Tx[3] #Par from 4th block.\n\nn.seq.Info.blockPars['Tx'] #returns None if not found."
+      },
+      "blockParGroups": {
+        "title": "",
+        "content": "blockParGroups → list (Read Only): An intermediate parGroup collection object, from which specific sequence parameter groups can be found.\nReturns a list of one parGroup from each block.\n\nn.seq.Info.blockParGroups.T\nn.seq.Info.blockParGroups.T[3] #ParGroup from 4th block.\n\nn.seq.Info.blockParGroups['T'] #returns None if not found."
+      },
+      "sequencePar": {
+        "title": "",
+        "content": "sequencePar → Par (Read Only): The main sequence parameter defining this sequence."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "[]": {
+        "title": "",
+        "content": "[block index]→ SequenceBlock: Sequence blocks may be easily accessed using the [] subscript and assignment operators.\nblock index - The index of the desired block."
+      },
+      "destroyBlock": {
+        "title": "",
+        "content": "destroyBlock(block)→ None: Destroy the block of parameters at the given location.\nblock - The index of the existing block to destroy."
+      },
+      "insertBlock": {
+        "title": "",
+        "content": "insertBlock(block)→ SequenceBlock: Insert a block of parameters at the given location.\nblock - The index of the new block to insert.\nReturns the newly created block. TouchDesigner Build: Latest\\nwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditormw-replace2023.112802021.100002020.20000before 2020.20000"
+      }
+    }
+  }
+}

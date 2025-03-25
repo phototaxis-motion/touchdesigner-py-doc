@@ -1,0 +1,25 @@
+{
+  "className": "ParGroupCollection_Class",
+  "url": "https://docs.derivative.ca/ParGroupCollection_Class",
+  "content": {
+    "title": "ParGroupCollection Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "[]": {
+        "title": "",
+        "content": "[name]→ Par: ParGroups may be easily accessed using the [] subscript and assignment operators.\nname - Must be an exact string name. Wildcards are not supported. If not found None is returned.p = op('base1').parGroup['Myfloat5'] TouchDesigner Build: Latest\\nwikieditorbefore wikieditor"
+      }
+    }
+  }
+}

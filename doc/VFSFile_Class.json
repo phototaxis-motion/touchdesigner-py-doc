@@ -1,0 +1,53 @@
+{
+  "className": "VFSFile_Class",
+  "url": "https://docs.derivative.ca/VFSFile_Class",
+  "content": {
+    "title": "VFSFile Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "name": {
+        "title": "",
+        "content": "name → str : Get or set the name of the file. This name can include slashes but should not include leading slashes."
+      },
+      "size": {
+        "title": "",
+        "content": "size → int (Read Only): Get the size of the file data."
+      },
+      "date": {
+        "title": "",
+        "content": "date → \"datetime.datetime\" (Read Only): Get the modified date of the file in the form of a datetime Python object."
+      },
+      "virtualPath": {
+        "title": "",
+        "content": "virtualPath → str (Read Only): Get the virtual path of the file. Returns a String formatted for fetching the file data from VFS in operators such as the Movie File In TOP. Format is vfs:<path to owner>:<filename>."
+      },
+      "originalFilePath": {
+        "title": "",
+        "content": "originalFilePath → str (Read Only): Get the original file path on disk. If the VFSFile was created from a bytearray and not a file on disk then this will be empty."
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): Get the OP owner."
+      },
+      "byteArray": {
+        "title": "",
+        "content": "byteArray → bytearray : Get or set the file data as a bytearray."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "destroy": {
+        "title": "",
+        "content": "destroy()→ None: Destroys the file in VFS referenced by this object."
+      },
+      "export": {
+        "title": "",
+        "content": "export(folder)→ str: Exports the file to the specified folder on disk and returns the location.\nfolder - The folder on disk to export the file to. TouchDesigner Build: Latest\\nwikieditorwikieditor2021.10000before 2021.10000"
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "className": "Run_Class",
+  "url": "https://docs.derivative.ca/Run_Class",
+  "content": {
+    "title": "Run Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "active": {
+        "title": "",
+        "content": "active → bool : Get or set whether or not this script will execute once its target frame is reached."
+      },
+      "group": {
+        "title": "",
+        "content": "group → str : Get or set the group label associated with this script."
+      },
+      "isCell": {
+        "title": "",
+        "content": "isCell → bool (Read Only): Returns true when the source is a cell, from a Cell.run() call."
+      },
+      "isDAT": {
+        "title": "",
+        "content": "isDAT → bool (Read Only): Returns true when the source is a DAT, from a DAT.run() call."
+      },
+      "isString": {
+        "title": "",
+        "content": "isString → bool (Read Only): Returns true when the source is a string, from a td module run() call"
+      },
+      "path": {
+        "title": "",
+        "content": "path → OP (Read Only): The operator location from which this script will execute."
+      },
+      "remainingFrames": {
+        "title": "",
+        "content": "remainingFrames → int : Get or set the remaining number of frames before the execution will occur."
+      },
+      "remainingMilliseconds": {
+        "title": "",
+        "content": "remainingMilliseconds → int : Get or set the remaining number of milliseconds before the execution will occur."
+      },
+      "source": {
+        "title": "",
+        "content": "source → DAT | Cell | str (Read Only): The source of the run. It will be either a DAT, cell, or string."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "kill": {
+        "title": "",
+        "content": "kill()→ None: Kill this run before it executes, and remove it from the global runs list, located in the td Module. TouchDesigner Build: Latest\\nwikieditor2021.100002018.28070before 2018.28070"
+      }
+    }
+  }
+}

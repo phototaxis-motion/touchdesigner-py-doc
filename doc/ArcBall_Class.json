@@ -1,0 +1,61 @@
+{
+  "className": "ArcBall_Class",
+  "url": "https://docs.derivative.ca/ArcBall_Class",
+  "content": {
+    "title": "ArcBall Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "beginPan": {
+        "title": "",
+        "content": "beginPan(u, v)→ None: Begin a pan at at the given u and v.\nm.beginPan(.1, .2)"
+      },
+      "beginRotate": {
+        "title": "",
+        "content": "beginRotate(u, v)→ None: Begin an arcball rotation at the given u and v.\nm.beginRotate(.1, .2)"
+      },
+      "beginDolly": {
+        "title": "",
+        "content": "beginDolly(u, v)→ None: Begin a dolly at at the given u and v.\nm.beginDolly(.1, .2)"
+      },
+      "pan": {
+        "title": "",
+        "content": "pan(u, v)→ None: Pan the view by the given x and y.\nm.pan(.1, .2)"
+      },
+      "panTo": {
+        "title": "",
+        "content": "panTo(u, v, scale=1.0)→ None: Pan from the u,v given in the last call to beginPan() to the given u and v, applying a scale as well to the pan amount.\nscale - (Keyword, Optional) Scale the operation by this amount.\nm.panTo(.1, .2)"
+      },
+      "rotateTo": {
+        "title": "",
+        "content": "rotateTo(u, v, scale=1.0)→ None: Rotates the arcball to the given u and v position.\nscale - (Keyword, Optional) Scale the operation by this amount.\nm.rotateTo(.1, .2)"
+      },
+      "dolly": {
+        "title": "",
+        "content": "dolly(z)→ None: Dolly the view by the given z value.\nm.dolly(.3)"
+      },
+      "dollyTo": {
+        "title": "",
+        "content": "dollyTo(u, v, scale=1.0)→ None: Dolly from the u,v given in the last call to beginDolly() to the given u and v, applying a scale as well to the dolly amount.(Keyword, Optional)\nscale - Scale the operation by this amount.\nm.dollyTo(.1, .2)"
+      },
+      "transform": {
+        "title": "",
+        "content": "transform()→ tdu.Matrix: Gets the current transform matrix for the arcball.\nm.transform()"
+      },
+      "setTransform": {
+        "title": "",
+        "content": "setTransform(matrix)→ None: Sets the current transform matrix for the arcball. Scales in the given matrix will be ignored.\nm.setTransform(m)"
+      },
+      "identity": {
+        "title": "",
+        "content": "identity()→ None: Resets all values of the ArcBall to the default state.\nm.identity() TouchDesigner Build: \nLatest\\nwikieditor\nwikieditor\nwikieditor\nmw-rollback\nmw-reverted\n2022.24140\n2021.10000\n2018.28070\nbefore 2018.28070 Retrieved from \"https://docs.derivative.ca/index.php?title=ArcBall_Class&oldid=31357\""
+      }
+    }
+  }
+}

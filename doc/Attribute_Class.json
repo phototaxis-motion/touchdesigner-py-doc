@@ -1,0 +1,49 @@
+{
+  "className": "Attribute_Class",
+  "url": "https://docs.derivative.ca/Attribute_Class",
+  "content": {
+    "title": "Attribute Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "name": {
+        "title": "",
+        "content": "name → str (Read Only): The name of this attribute."
+      },
+      "size": {
+        "title": "",
+        "content": "size → int (Read Only): The number of values associated with this attribute. For example, a normal attribute has a size of 3."
+      },
+      "type": {
+        "title": "",
+        "content": "type → float | int | str | tuple | TDU.Position | TDU.Vector (Read Only): The type associated with this attribute: float, integer, string, tuple, Position, or Vector."
+      },
+      "default": {
+        "title": "",
+        "content": "default → float | int | str | tuple | TDU.Position | TDU.Vector (Read Only): The default values associated with this attribute. Dependent on the type of attribute, it may return a float, integer, string, tuple, Position, or Vector."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "destroy": {
+        "title": "",
+        "content": "destroy()→ None: Destroy the attribute referenced by this object.\nn = scriptOP.pointAttribs['N'].destroy()"
+      },
+      "vals": {
+        "title": "",
+        "content": "vals(delayed=False)→ list: Returns the attribute values as a list.\ndelayed - (Keyword, Optional) If set to True, the download results will be delayed until the next call to vals(), avoiding stalling the GPU waiting for the result immediately."
+      },
+      "Accessing_Attributes": {
+        "title": "Accessing Attributes",
+        "content": "[edit] See Attributes for examples on how to access individual attributes. TouchDesigner Build: Latest\\nwikieditorwikieditorwikieditorwikieditorwikieditor2022.241402021.100002018.28070before 2018.28070"
+      }
+    }
+  }
+}

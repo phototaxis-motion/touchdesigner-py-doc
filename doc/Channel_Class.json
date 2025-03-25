@@ -1,0 +1,85 @@
+{
+  "className": "Channel_Class",
+  "url": "https://docs.derivative.ca/Channel_Class",
+  "content": {
+    "title": "Channel Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "valid": {
+        "title": "",
+        "content": "valid → bool (Read Only): True if the referenced chanel value currently exists, False if it has been deleted."
+      },
+      "index": {
+        "title": "",
+        "content": "index → int (Read Only): The numeric index of the channel."
+      },
+      "name": {
+        "title": "",
+        "content": "name → str (Read Only): The name of the channel."
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "exports": {
+        "title": "",
+        "content": "exports → list (Read Only): The (possibly empty) list of parameters this channel currently exports to."
+      },
+      "vals": {
+        "title": "",
+        "content": "vals → list : Get or set the full list of Channel values. Modifying Channel values can only be done in Python within a Script CHOP."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "[]": {
+        "title": "",
+        "content": "[index]→ float: Sample values may be easily accessed from a Channel using the [] subscript operator.\nindex - Must be an numeric sample index. Wildcards are not supported.To get the third sample from the channel, assuming the channel has 3 or more samples:\n\nn = op('pattern1')\nc = n['chan1'][2] # the third sample\nl = len(n['chan2']) # the total number of samples in the channel"
+      },
+      "eval": {
+        "title": "",
+        "content": "eval(index)→ float: Evaluate the channel at the specified index sample index. If no index is given, the current index based on the current time is used.\nindex - (Optional) The sample index to evaluate at."
+      },
+      "evalFrame": {
+        "title": "",
+        "content": "evalFrame(frame)→ float: Evaluate the channel at the specified frame. If no frame is given, the current frame is used.\nframe  - (Optional) The frame to evaluate at."
+      },
+      "evalSeconds": {
+        "title": "",
+        "content": "evalSeconds(secs)→ float: Evaluate the channel at the specified seconds. If no time is given, the current time is used.\nsecs - (Optional) The time in seconds to evaluate at."
+      },
+      "numpyArray": {
+        "title": "",
+        "content": "numpyArray()→ numpy.ndarray: Returns this channels data as a NumPy array with a length equal to the track length."
+      },
+      "destroy": {
+        "title": "",
+        "content": "destroy()→ None: Destroy and remove the actual Channel this object refers to. This operation is only valid when the channel belongs to a  Script CHOP or OSC In CHOP .\nNote: after this call, other existing Channel objects in this CHOP may no longer be valid."
+      },
+      "average": {
+        "title": "",
+        "content": "average()→ float: Returns the average value of all the channel samples."
+      },
+      "min": {
+        "title": "",
+        "content": "min()→ float: Returns the minimum value of all the channel samples."
+      },
+      "max": {
+        "title": "",
+        "content": "max()→ float: Returns the maximum value of all the channel samples."
+      },
+      "copyNumpyArray": {
+        "title": "",
+        "content": "copyNumpyArray(numpyArray)→ None: Copies the contents of the numpyArray into the Channel sample values.\nnumpyArray - The NumPy Array to copy. Must be shape(n), where n is the sample length of the CHOP. The data type must be float32. Modifying Channel values can only be done in Python within a Script CHOP."
+      },
+      "Casting_to_a_Value": {
+        "title": "Casting to a Value",
+        "content": "[edit] The Channel Class implements all necessary methods to be treated as a number, which in this case evaluates its current value. Therefore, an explicit call to eval() is unnecessary when used in a parameter, or in a numeric expression. For example, the following are equivalent in a channel: (float)n['chan1']\nn['chan1'].eval() The following are also equivalent, because the + 1 will implicitly cast the channel to a number: n['chan1'].eval() + 1\nn['chan1'] + 1 TouchDesigner Build: Latest\\nwikieditor2022.241402021.100002018.28070before 2018.28070"
+      }
+    }
+  }
+}

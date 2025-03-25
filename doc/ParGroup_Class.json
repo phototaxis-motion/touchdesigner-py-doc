@@ -1,0 +1,301 @@
+{
+  "className": "ParGroup_Class",
+  "url": "https://docs.derivative.ca/ParGroup_Class",
+  "content": {
+    "title": "ParGroup Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "bindExpr": {
+        "title": "",
+        "content": "bindExpr → tuple[str, ...] : Get or set expressions that return a Parameter object. This can be used to bind this parameter's constant values to the referenced parameters.\nExample:\n\np.bindExpr = (\"op('geo1').par.tx\", \"op('geo1').par.ty\", \"op('geo1').par.tz\")\n  \n        Note the outside quotes, as bindExpr is an expression, not an object."
+      },
+      "bindMaster": {
+        "title": "",
+        "content": "bindMaster → tuple (Read Only): The objects to which this parameter is bound to, possibly None."
+      },
+      "bindRange": {
+        "title": "",
+        "content": "bindRange → bool : Get or set parameter's range binding state. If True, min, max, clampMin, clampMax, normMin, normMax, normVal values will be based on master bind parameter. Can only be set on Custom Parameters."
+      },
+      "bindReferences": {
+        "title": "",
+        "content": "bindReferences → tuple (Read Only): The (possibly empty) lists of objects which bind to this parameter."
+      },
+      "clampMax": {
+        "title": "",
+        "content": "clampMax → tuple[float, ...] : Get or set the parameter's numerical clamping behaviors. If set to clampMax = True, the parameter will clamp on the upper end at the value specified in max Can only be set on Custom Parameters."
+      },
+      "clampMin": {
+        "title": "",
+        "content": "clampMin → tuple[bool, ...] : Get or set the parameter's numerical clamping behaviors. If set to clampMin = True, the parameter will clamp on the lower end at the value specified in min Can only be set on Custom Parameters."
+      },
+      "collapsable": {
+        "title": "",
+        "content": "collapsable → bool (Read Only): Returns True if the parameter is collapsable."
+      },
+      "collapser": {
+        "title": "",
+        "content": "collapser → bool (Read Only): Returns True if the parameter is a parent of collapsable parameters (ie. a collapser)."
+      },
+      "default": {
+        "title": "",
+        "content": "default → tuple : Get or set the parameter's default values. Can only be set on Custom Parameters."
+      },
+      "defaultExpr": {
+        "title": "",
+        "content": "defaultExpr → tuple[str, ...] : Get or set the parameter's default expressions. Can only be set on Custom Parameters. \n# value defaults to this expression.\nop('base1').parGroup.Size.defaultExpr = ('me.time.frame', 'me.time.frame', 'me.time.frame')"
+      },
+      "defaultBindExpr": {
+        "title": "",
+        "content": "defaultBindExpr → tuple[str, ...] : Get or set the parameter's default bind expressions. Can only be set on Custom Parameters.\n# value defaults to this expression.\nop('base1').parGroup.Size.defaultBindExpr = ('me.par.tx', 'me.par.ty', 'me.par.tz')"
+      },
+      "defaultMode": {
+        "title": "",
+        "content": "defaultMode → tuple[ParMode, ...] : Get or set the parameter's evaluation modes.\nop('geo1').parGroup.t.defaultMode = (ParMode.EXPRESSION, ParMode.EXPRESSION, ParMode.EXPRESSION)\n\nThe modes are one of: ParMode.CONSTANT, ParMode.EXPRESSION, or ParMode.EXPORT, or ParMode.BIND.\n\nSee Parameter_Dialog#Working_with_Parameter_Modes for more information."
+      },
+      "enable": {
+        "title": "",
+        "content": "enable → bool : Get or set the parameter's enable state. Can only be set on Custom Parameters."
+      },
+      "enableExpr": {
+        "title": "",
+        "content": "enableExpr → str : Get or set an expression that controls the enable state for this parameter group.\np.enableExpr = \"me.par.X.menuIndex == 5\"\n\nNote the outside quotes, as this is an expression, not an object."
+      },
+      "exportOP": {
+        "title": "",
+        "content": "exportOP → tuple[OP | None, ...] (Read Only): The operators exporting to this parameter."
+      },
+      "exportSource": {
+        "title": "",
+        "content": "exportSource → tuple[Cell | Channel | None, ...] (Read Only): tuple of objects exporting to this parameter. Examples: Cell, Channel or None."
+      },
+      "expr": {
+        "title": "",
+        "content": "expr → tuple[str, ...] : Get or set the non-evaluated expressions only. To get the parameter's current values, regardless of the Parameter Mode (constant, expression, export or bound), use the eval() method described below.\nop('geo1').parGroup.t.expr = ('absTime.frame', 'absTime.frame', 'absTime.frame')  \n# set to match current frame\n\nWhen setting this member, the parameter will also be placed in expression mode. See mode member below.\n\nNOTE: For convenience, the expression is placed in double-quotes so you can safely put in expressions containing single quotes. 'a' and \"a\" have the same effect of enclosing strings in python."
+      },
+      "help": {
+        "title": "",
+        "content": "help → str : Get or set a custom parameter's help text. To see any parameter's help, rollover the parameter while holding the Alt key."
+      },
+      "isDefault": {
+        "title": "",
+        "content": "isDefault → bool (Read Only): True when the parameter value, expression and mode are in their default settings."
+      },
+      "isCustom": {
+        "title": "",
+        "content": "isCustom → bool (Read Only): True for Custom Parameters."
+      },
+      "isFloat": {
+        "title": "",
+        "content": "isFloat → bool (Read Only): True for floating point numeric parameters."
+      },
+      "isInt": {
+        "title": "",
+        "content": "isInt → bool (Read Only): True for integer numeric parameters."
+      },
+      "isMenu": {
+        "title": "",
+        "content": "isMenu → bool (Read Only): True for menu parameters."
+      },
+      "isMomentary": {
+        "title": "",
+        "content": "isMomentary → bool (Read Only): True for momentary parameters."
+      },
+      "isNumber": {
+        "title": "",
+        "content": "isNumber → bool (Read Only): True for numeric parameters."
+      },
+      "isOP": {
+        "title": "",
+        "content": "isOP → bool (Read Only): True for OP parameters."
+      },
+      "isPulse": {
+        "title": "",
+        "content": "isPulse → bool (Read Only): True for pulse parameters."
+      },
+      "isPython": {
+        "title": "",
+        "content": "isPython → bool (Read Only): True for python parameters."
+      },
+      "isSequence": {
+        "title": "",
+        "content": "isSequence → bool (Read Only): True for sequence header parameters."
+      },
+      "isString": {
+        "title": "",
+        "content": "isString → bool (Read Only): True for string parameters."
+      },
+      "isToggle": {
+        "title": "",
+        "content": "isToggle → bool (Read Only): True for toggle parameters."
+      },
+      "label": {
+        "title": "",
+        "content": "label → str : Get or set the parameter's label.\nop('myOperator').parGroup.Custompar.label = 'Translate'\n \nCan only be set on Custom Parameters."
+      },
+      "max": {
+        "title": "",
+        "content": "max → tuple[float, ...] : Get or set the parameter's numerical maximum values. The parameter's values will be clamped at that maximum if clampMax = True. Can only be set on Custom Parameters."
+      },
+      "menuIndex": {
+        "title": "",
+        "content": "menuIndex → tuple[int, ...] : Get or set a tuple of menu constant values by their indices."
+      },
+      "menuLabels": {
+        "title": "",
+        "content": "menuLabels → tuple[list[str], ...] : Get or set a tuple of lists of all possible menu choice labels. In the case of non menu parameters, None(s) are returned. Can only be set on Custom Parameters."
+      },
+      "menuNames": {
+        "title": "",
+        "content": "menuNames → tuple[list[str], ...] : Get or set a tuple of lists of all possible menu choice names. In the case of non menu parameters, None(s) are returned. Can only be set on Custom Parameters."
+      },
+      "menuSource": {
+        "title": "",
+        "content": "menuSource → tuple[str, ...] : Get or set a tuple of expressions that returns objects with .menuItems .menuNames members.  This can be used to create a custom menu whose entries dynamically follow that of another menu for example."
+      },
+      "min": {
+        "title": "",
+        "content": "min → tuple[float, ...] : Get or set the parameter's numerical minimum values. The parameter's values will be clamped at that minimum if clampMin = True for the particular Par. Can only be set on Custom Parameters."
+      },
+      "mode": {
+        "title": "",
+        "content": "mode → tuple[ParMode, ...] : Get or set the parameter's evaluation modes.\nop('geo1').parGroup.t.mode = (ParMode.EXPRESSION, ParMode.EXPRESSION, ParMode.EXPRESSION)\n\nThe modes are one of:  ParMode.CONSTANT, ParMode.EXPRESSION, or ParMode.EXPORT, or ParMode.BIND.\n\nSee Parameter_Dialog#Working_with_Parameter_Modes for more information."
+      },
+      "name": {
+        "title": "",
+        "content": "name → str : Get or set the parameter's unique name.\nop('myOperator').parGroup.Custompar.name = 'Translate'\n \nCan only be set on Custom Parameters."
+      },
+      "baseName": {
+        "title": "",
+        "content": "baseName → str : Get or set the parameter's base name. This excludes any sequence prefixes, sequence indices or name suffixes. Can only be set on Custom Parameters."
+      },
+      "normMax": {
+        "title": "",
+        "content": "normMax → tuple[float, ...] : Get or set the parameter's maximum slider values if the parameter is a numerical slider. Can only be set on Custom Parameters."
+      },
+      "normMin": {
+        "title": "",
+        "content": "normMin → tuple[float, ...] : Get or set the parameter's minimum slider values if the parameter is a numerical slider. Can only be set on Custom Parameters."
+      },
+      "normVal": {
+        "title": "",
+        "content": "normVal → tuple[float, ...] : Get or set the parameter's values as a normalized slider position. Can only be set on Custom Parameters."
+      },
+      "order": {
+        "title": "",
+        "content": "order → int : Get or set the parameter's position on the parameter page.  Can only be set on Custom Parameters."
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "page": {
+        "title": "",
+        "content": "page → Page : Get or set the parameter page the custom parameter is part of. Can only be set on Custom Parameters."
+      },
+      "password": {
+        "title": "",
+        "content": "password → bool : Get or set the parameter's password mode. When True all text is rendered as asterisks. Can only be set on Custom string, int or float parameters. Custom Parameters."
+      },
+      "prevMode": {
+        "title": "",
+        "content": "prevMode → tuple (Read Only): The parameter's previous evaluation modes."
+      },
+      "readOnly": {
+        "title": "",
+        "content": "readOnly → bool : Get or set the parameter's read only status. When True the parameter cannot be modified through the UI, only scripting."
+      },
+      "startSection": {
+        "title": "",
+        "content": "startSection → bool : Get or set the parameter's separator status. When True a visible separator is drawn between this parameter and the ones preceding it. Can only be set on Custom Parameters."
+      },
+      "style": {
+        "title": "",
+        "content": "style → str (Read Only): Describes the behavior and contents of the custom parameter. Example 'Float', 'Int', 'Pulse', 'XYZ', etc."
+      },
+      "subLabel": {
+        "title": "",
+        "content": "subLabel → tuple (Read Only): Returns the names of the sub-label."
+      },
+      "val": {
+        "title": "",
+        "content": "val → tuple : Get or set the constant values of the parameter only. To get the parameter's current values, regardless of the Parameter Modes (constant, expression, export or bound), use the eval() method described below.\nop('geo1').parGroup.t.val   # the constant values \nop('geo1').parGroup.t.eval()   # the evaluated parameter\nop('geo1').parGroup.t.val = (1,2,3)\nop('geo1').parGroup.t = (1,2,3)  #equivalent to above, more concise form\n\nWhen setting this member, the parameter will also be placed in constant mode.  See mode member below.\n\nTo set a menu value by its index, use the menuIndex member as described below."
+      },
+      "valid": {
+        "title": "",
+        "content": "valid → bool (Read Only): True if the referenced parameter currently exists, False if it has been deleted."
+      },
+      "index": {
+        "title": "",
+        "content": "index → int (Read Only): The parameter's order in the list."
+      },
+      "sequence": {
+        "title": "",
+        "content": "sequence → Sequence | None (Read Only): The Sequence this parGroup is a part of. None if not in a sequence."
+      },
+      "sequenceBlock": {
+        "title": "",
+        "content": "sequenceBlock → SequenceBlock | None (Read Only): The SequenceBlock this parGroup belongs to. None if not in a sequence."
+      },
+      "blockIndex": {
+        "title": "",
+        "content": "blockIndex → int (Read Only): The index of the parGroup within its SequenceBlock. None if not in a sequence."
+      },
+      "sequenceIndex": {
+        "title": "",
+        "content": "sequenceIndex → int (Read Only): The index of the parGroup's SequenceBlock in its Sequence. None if not in a sequence."
+      },
+      "size": {
+        "title": "",
+        "content": "size → int : Get or set the parameter's vector size."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "copy": {
+        "title": "",
+        "content": "copy(ParGroup)→ None: Copy the specified parameter.\nParGroup - The parameter to copy.op('geo1').parGroup.t.copy( op('geo2').parGroup.t )"
+      },
+      "destroy": {
+        "title": "",
+        "content": "destroy()→ None: Destroy the parameter referenced by this ParGroup. An exception will be raised if the parameter has already been destroyed. Only custom and sequential parameters can be destroyed.  Destroying a sequential parameter will destroy its entire block. Note: When any parameter is destroyed, any existing parameter objects will be invalid and should be re-fetched."
+      },
+      "eval": {
+        "title": "",
+        "content": "eval()→ tuple: Evaluate a parameter group. This value may be derived by the parameter group's constant value, expression, or export, dependent on its mode.\na = op('geo1').parGroup.t.eval()"
+      },
+      "evalExport": {
+        "title": "",
+        "content": "evalExport()→ tuple: Evaluate the export portions of a parameter, if it contains any. This will ignore any expressions, etc.\na = op('geo1').parGroup.t.evalExport()"
+      },
+      "evalExpression": {
+        "title": "",
+        "content": "evalExpression()→ tuple: Evaluate the expression portions of a parameter, if it contains any. This will ignore any exports, etc.\na = op('geo1').parGroup.t.evalExpression()\n\nTo evaluate an arbitrary expression string, that is not inside a parameter, see OP.evalExpression."
+      },
+      "evalNorm": {
+        "title": "",
+        "content": "evalNorm()→ tuple[float, ...[: Similar to eval() but the returns the normalized slider values."
+      },
+      "evalOPs": {
+        "title": "",
+        "content": "evalOPs()→ tuple[list[op], ...]: Evaluate each parameter as a series of operators. This is useful for a custom  parameter that specifies a list of operator paths for example.\na = op('base1').parGroup.Paths.evalOPs()"
+      },
+      "pars": {
+        "title": "",
+        "content": "pars(pattern)→ list: Returns a (possibly empty) list of parameter objects that match the pattern.\npattern - Is a string following the Pattern Matching rules, specifying which parameters to return.# translate parameters\nnewlist = op('geo1').parGroup.t.pars('t?')"
+      },
+      "reset": {
+        "title": "",
+        "content": "reset()→ bool: Resets the parameter group to its default state.\nReturns true if anything was changed.\n\nop('geo1').parGroup.t.reset()"
+      },
+      "isSameParGroup": {
+        "title": "",
+        "content": "isSameParGroup(parGroup : ParGroup)→ bool: True if the provided parGroup is the same ParGroup on the same operator. Because op('container1').parGroup.x == op('container2').parGroup.x compares values and op('container1').parGroup.x is op('container1').parGroup.x is always False (because of TouchDesigner internals), you must use isSameParGroup to compare ParGroup objects.\nparGroup - The ParGroup to compare identity with. TouchDesigner Build: Latest\\nwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditormw-rollbackmw-revertedmw-revertedmw-revertedmw-reverted2023.112802022.24140before 2022.24140"
+      }
+    }
+  }
+}

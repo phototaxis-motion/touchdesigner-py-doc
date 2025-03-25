@@ -1,0 +1,37 @@
+{
+  "className": "Prims_Class",
+  "url": "https://docs.derivative.ca/Prims_Class",
+  "content": {
+    "title": "Prims Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "Special_Functions": {
+        "title": "Special Functions",
+        "content": "[edit]"
+      },
+      "len": {
+        "title": "",
+        "content": "len(Prims)→ int: Returns the total number of prims.\na = len(op('box1').prims)"
+      },
+      "[]": {
+        "title": "",
+        "content": "[index]→ td.Prim: Get a specific prim given an integer index.\nn = op('box1').prims[0]"
+      },
+      "Iterator": {
+        "title": "",
+        "content": "Iterator→ td.Prim: Iterate over each prim.\nfor m in op('box1').prims:\n\t# do something with m, which is a Prim TouchDesigner Build: Latest\\n2021.100002018.28070before 2018.28070"
+      }
+    }
+  }
+}

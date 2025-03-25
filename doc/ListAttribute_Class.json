@@ -1,0 +1,157 @@
+{
+  "className": "ListAttribute_Class",
+  "url": "https://docs.derivative.ca/ListAttribute_Class",
+  "content": {
+    "title": "ListAttribute Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "bgColor": {
+        "title": "",
+        "content": "bgColor → tuple[float, float, float, float] : Get or set background color. In the form of a tuple (r, g, b, a)."
+      },
+      "bottomBorderInColor": {
+        "title": "",
+        "content": "bottomBorderInColor → tuple[float, float, float, float] : Get or set inside bottom color. In the form of a tuple (r, g, b, a)."
+      },
+      "bottomBorderOutColor": {
+        "title": "",
+        "content": "bottomBorderOutColor → tuple[float, float, float, float] : Get or set outside bottom color. In the form of a tuple (r, g, b, a)."
+      },
+      "colStretch": {
+        "title": "",
+        "content": "colStretch → bool : Get or set column stretchiness. When True, colWidth specifies minimum width."
+      },
+      "colWidth": {
+        "title": "",
+        "content": "colWidth → float : Get or set column width, expressed in pixels."
+      },
+      "draggable": {
+        "title": "",
+        "content": "draggable → bool : Get or set whether or not cell is draggable."
+      },
+      "editable": {
+        "title": "",
+        "content": "editable → bool : Get or set whether or not contents are editable. When True, contents can be edited by clicking on the cell."
+      },
+      "focus": {
+        "title": "",
+        "content": "focus → bool (Read Only): Returns True if the cell/row/column/table is currently being edited."
+      },
+      "fontFile": {
+        "title": "",
+        "content": "fontFile → str : Get or set font file. VFS embedded files supported as well."
+      },
+      "fontBold": {
+        "title": "",
+        "content": "fontBold → bool : Get or set whether or not text is rendered in bold font."
+      },
+      "fontFace": {
+        "title": "",
+        "content": "fontFace → str : Get or set font face. Example 'verdana'."
+      },
+      "fontItalic": {
+        "title": "",
+        "content": "fontItalic → bool : Get or set whether or not text is rendered italicized."
+      },
+      "fontSizeX": {
+        "title": "",
+        "content": "fontSizeX → float : Get or set font horizontal size."
+      },
+      "fontSizeY": {
+        "title": "",
+        "content": "fontSizeY → float : Get or set font vertical size. If not specified, uses fontSizeX."
+      },
+      "sizeInPoints": {
+        "title": "",
+        "content": "sizeInPoints → bool : Get or set text size units. When True size is in points, when False it is in pixels."
+      },
+      "help": {
+        "title": "",
+        "content": "help → str : Get or set help string when rolling over the cell."
+      },
+      "leftBorderInColor": {
+        "title": "",
+        "content": "leftBorderInColor → tuple[float, float, float, float] : Get or set inside left color. In the form of a tuple (r, g, b, a)."
+      },
+      "leftBorderOutColor": {
+        "title": "",
+        "content": "leftBorderOutColor → tuple[float, float, float, float] : Get or set outside left color. In the form of a tuple (r, g, b, a)."
+      },
+      "radio": {
+        "title": "",
+        "content": "radio → bool (Read Only): Returns true if the mouse last selected the cell/row/column/table."
+      },
+      "rightBorderInColor": {
+        "title": "",
+        "content": "rightBorderInColor → tuple[float, float, float, float] : Get or set inside right color. In the form of a tuple (r, g, b, a)."
+      },
+      "rightBorderOutColor": {
+        "title": "",
+        "content": "rightBorderOutColor → tuple[float, float, float, float] : Get or set outside right color. In the form of a tuple (r, g, b, a)."
+      },
+      "rollover": {
+        "title": "",
+        "content": "rollover → bool (Read Only): Returns true if the mouse is currently over the cell/row/column/table."
+      },
+      "rowHeight": {
+        "title": "",
+        "content": "rowHeight → float : Get or set row height, expressed in pixels."
+      },
+      "rowIndent": {
+        "title": "",
+        "content": "rowIndent → float : Get or set row indent, expressed in pixels."
+      },
+      "rowStretch": {
+        "title": "",
+        "content": "rowStretch → bool : Get or set row stretchiness. When True, rowWidth specifies minimum width."
+      },
+      "select": {
+        "title": "",
+        "content": "select → bool (Read Only): Returns true if the mouse is currently pressed over the cell/row/column/table."
+      },
+      "text": {
+        "title": "",
+        "content": "text → str : Get or set contents."
+      },
+      "textColor": {
+        "title": "",
+        "content": "textColor → tuple[float, float, float, float] : Get or set text color. In the form of a tuple (r, g, b, a)."
+      },
+      "textJustify": {
+        "title": "",
+        "content": "textJustify → JustifyType : Get or set text justification. Value is one of: JustifyType.TOPLEFT, JustifyType.TOPCENTER, JustifyType.TOPRIGHT, JustifyType.CENTERLEFT, JustifyType.CENTER, JustifyType.CENTERRIGHT, JustifyType.BOTTOMLEFT, JustifyType.BOTTOMCENTER, JustifyType.BOTTOMRIGHT"
+      },
+      "textOffsetX": {
+        "title": "",
+        "content": "textOffsetX → float : Get or set horizontal text offset."
+      },
+      "textOffsetY": {
+        "title": "",
+        "content": "textOffsetY → float : Get or set vertical text offset."
+      },
+      "top": {
+        "title": "",
+        "content": "top → TOP : Get or set background image TOP."
+      },
+      "topBorderInColor": {
+        "title": "",
+        "content": "topBorderInColor → tuple[float, float, float, float] : Get or set inside top color. In the form of a tuple (r, g, b, a)."
+      },
+      "topBorderOutColor": {
+        "title": "",
+        "content": "topBorderOutColor → tuple[float, float, float, float] : Get or set outside top color. In the form of a tuple (r, g, b, a)."
+      },
+      "wordWrap": {
+        "title": "",
+        "content": "wordWrap → bool : Get or set word wrapping."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      }
+    }
+  }
+}

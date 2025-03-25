@@ -1,0 +1,49 @@
+{
+  "className": "SysInfo_Class",
+  "url": "https://docs.derivative.ca/SysInfo_Class",
+  "content": {
+    "title": "SysInfo Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "numCPUs": {
+        "title": "",
+        "content": "numCPUs → int (Read Only): The number of CPUs/cores on the system."
+      },
+      "ram": {
+        "title": "",
+        "content": "ram → float (Read Only): Amount of available RAM memory."
+      },
+      "numMonitors": {
+        "title": "",
+        "content": "numMonitors → int (Read Only): The number of monitors."
+      },
+      "xres": {
+        "title": "",
+        "content": "xres → int (Read Only): The system's current monitor resolution width."
+      },
+      "yres": {
+        "title": "",
+        "content": "yres → int (Read Only): The system's current monitor resolution height."
+      },
+      "tfs": {
+        "title": "",
+        "content": "tfs → str (Read Only): The path to the TFS directory."
+      },
+      "MIDIInputs": {
+        "title": "",
+        "content": "MIDIInputs → list[str] (Read Only): A list of all MIDI Input device names."
+      },
+      "MIDIOutputs": {
+        "title": "",
+        "content": "MIDIOutputs → list[str] (Read Only): A list of all MIDI Output device names."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      }
+    }
+  }
+}

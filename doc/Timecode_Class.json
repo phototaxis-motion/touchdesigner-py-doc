@@ -1,0 +1,85 @@
+{
+  "className": "Timecode_Class",
+  "url": "https://docs.derivative.ca/Timecode_Class",
+  "content": {
+    "title": "Timecode Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "countdown": {
+        "title": "",
+        "content": "countdown → tdu.Timecode (Read Only): Return a Timecode Object of the difference between the length and the current time. If a custom length is not specified then it will use a default: 23:59:59:ff for SMPTE and 99:59:59:ff."
+      },
+      "dropFrame": {
+        "title": "",
+        "content": "dropFrame → bool (Read Only): True if the Timecode is drop-frame, False otherwise."
+      },
+      "fps": {
+        "title": "",
+        "content": "fps → float : Get or set the framerate (in frames per second) of the Timecode."
+      },
+      "frame": {
+        "title": "",
+        "content": "frame → int (Read Only): The Timecode frame: 0 to fps-1"
+      },
+      "hour": {
+        "title": "",
+        "content": "hour → int (Read Only): The Timecode hour: 0 to 99 if non-SMPTE, 0 to 23 otherwise."
+      },
+      "minute": {
+        "title": "",
+        "content": "minute → int (Read Only): The Timecode minute: 0 to 59."
+      },
+      "second": {
+        "title": "",
+        "content": "second → int (Read Only): The Timecode second: 0 to 59."
+      },
+      "negative": {
+        "title": "",
+        "content": "negative → bool : True if the Timecode is negative, and False otherwise. Always False if the Timecode is following SMPTE standard."
+      },
+      "smpte": {
+        "title": "",
+        "content": "smpte → bool : True if the Timecode is SMPTE standard, and False otherwise. SMPTE Timecodes cannot be negative and cannot exceed 24 hours."
+      },
+      "text": {
+        "title": "",
+        "content": "text → str (Read Only): Get the text format of the Timecode."
+      },
+      "totalFrames": {
+        "title": "",
+        "content": "totalFrames → int (Read Only): The total number of Timecode frames, which is calculated from the hour, minute, second, frame values. Whether or not the Timecode is drop frame will also affect the value."
+      },
+      "totalSeconds": {
+        "title": "",
+        "content": "totalSeconds → float (Read Only): The total number of Timecode seconds, which is calculated from the hour, minute, second, frame values. Whether or not the Timecode is drop frame will also affect the value."
+      },
+      "cycle": {
+        "title": "",
+        "content": "cycle → bool : Get or set whether the timecode cycles. True if the Timecode cycles when the timecode value reaches the custom length (ie. specified with setLength()). If False then the timecode value will hold the last value (ie. length)."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "setComponents": {
+        "title": "",
+        "content": "setComponents(hour, minute, second, frame, negative=False, fps=None)→ None: Set the Timecode from individual time components.\nhour - The new hour value.\nminute - The new minute value.\nsecond - The new second value.\nframe - The new frame value.\nnegative (Keyword, Optional) - Whether the new Timecode is negative, False by default.\nfps (Keyword, Optional) - The Timecode's FPS. If not specified then the FPS will not change.n.setComponents(12, 22, 33, 45, negative=True, fps=60) -> new Timecode will be -12:22:33:45."
+      },
+      "setString": {
+        "title": "",
+        "content": "setString(timecodeStr, fps=None)→ None: Set the Timecode from a string formated as [-]hh:mm:ss:ff.\ntimecodeStr - The string in the format: [-]hh:mm:ss:ff.\nfps (Keyword, Optional) - The Timecode's FPS. If not specified then the FPS will not change.n.setString('01:01:00:00', fps=60)"
+      },
+      "setTotalFrames": {
+        "title": "",
+        "content": "setTotalFrames(totalFrames, fps=None)→ None: Set the Timecode to a single integer value representing the new total frames.\ntotalFrames - The new total frame value.\nfps (Keyword, Optional) - The Timecode's FPS. If not specified then the FPS will not change.n.setTotalFrames(120, fps=60) # new Timecode will be 00:00:02:00"
+      },
+      "setLength": {
+        "title": "",
+        "content": "setLength(length)→ None: Set Timecode to a custom length. Useful in conjunction with countdown.\nlength - The new length, either a total frame value or a Timecode Object. Must be above 0.n.setLength(600) # sets the length to 10 seconds for a Timecode with 60 FPS. TouchDesigner Build: Latest\\nwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditor2023.11280"
+      }
+    }
+  }
+}

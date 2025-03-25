@@ -1,0 +1,57 @@
+{
+  "className": "Connector_Class",
+  "url": "https://docs.derivative.ca/Connector_Class",
+  "content": {
+    "title": "Connector Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "index": {
+        "title": "",
+        "content": "index → int (Read Only): The numeric index of this connector."
+      },
+      "isInput": {
+        "title": "",
+        "content": "isInput → bool (Read Only): True when the connector is an input."
+      },
+      "isOutput": {
+        "title": "",
+        "content": "isOutput → bool (Read Only): True when the connector is an output."
+      },
+      "inOP": {
+        "title": "",
+        "content": "inOP → OP (Read Only): Will return any input operators (e.g. inSOP, inCHOP) associated with this connector.  This only applies to regular operator connections attached to components."
+      },
+      "outOP": {
+        "title": "",
+        "content": "outOP → OP (Read Only): Will return any output operators (e.g. outSOP, outCHOP) associated with this connector.  This only applies to regular operator connections attached to components."
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "connections": {
+        "title": "",
+        "content": "connections → list (Read Only): The list of connector objects connected to this object."
+      },
+      "description": {
+        "title": "",
+        "content": "description → str (Read Only): A description for this connection. Example: 'Color Image'."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "connect": {
+        "title": "",
+        "content": "connect(target)→ None: Wire this connector to a target location. The target may be an operator or another connector.\nWhen the connector is an input, its connection is replaced with the target.\nWhen the connector is an output, a new connection is appended to the target.\n\ntarget - The OP or connector you want to connect to.# connect noise1 to lag1\nop('noise1').outputConnectors[0].connect(op('lag1'))\n\n# connect choptotop1 to 2nd input of displace1\nop('choptotop1').outputConnectors[0].connect(op('displace1').inputConnectors[1])\n\n# connect geo1 to geo2, two equivalent methods:\nop('geo1').outputCOMPConnectors[0].connect(op('geo2'))\nop('geo2').inputCOMPConnectors[0].connect(op('geo1'))"
+      },
+      "disconnect": {
+        "title": "",
+        "content": "disconnect()→ None: Disconnect this connector.\nop('lag1').inputConnectors[0].disconnect()\nop('lag1').outputConnectors[0].disconnect()\n\n# disconnect geo2 from geo1, two equivalent methods\nop('geo1').outputCOMPConnectors[0].disconnect()\nop('geo2').inputCOMPConnectors[0].disconnect() TouchDesigner Build: Latest\\n2022.241402021.100002018.28070before 2018.28070"
+      }
+    }
+  }
+}

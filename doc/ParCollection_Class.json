@@ -1,0 +1,25 @@
+{
+  "className": "ParCollection_Class",
+  "url": "https://docs.derivative.ca/ParCollection_Class",
+  "content": {
+    "title": "ParCollection Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "[]": {
+        "title": "",
+        "content": "[name]→ Par: Parameters may be easily accessed using the [] subscript and assignment operators.\nname - Must be an exact string name. Wildcards are not supported. If not found None is returned.p = op('base1').par['Myfloat5'] TouchDesigner Build: Latest\\n2021.100002020.230602018.28070before 2018.28070"
+      }
+    }
+  }
+}

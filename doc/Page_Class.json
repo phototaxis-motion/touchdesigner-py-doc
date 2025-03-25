@@ -1,0 +1,181 @@
+{
+  "className": "Page_Class",
+  "url": "https://docs.derivative.ca/Page_Class",
+  "content": {
+    "title": "Page Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "name": {
+        "title": "",
+        "content": "name → bool : Get or set the name of the page."
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "parGroups": {
+        "title": "",
+        "content": "parGroups → list (Read Only): A list of parameter groups on this page. A ParGroup is the set of parameters on one line."
+      },
+      "pars": {
+        "title": "",
+        "content": "pars → list (Read Only): The list of parameters on this page."
+      },
+      "index": {
+        "title": "",
+        "content": "index → int (Read Only): The numeric index of this page."
+      },
+      "isCustom": {
+        "title": "",
+        "content": "isCustom → bool (Read Only): Boolean for whether this page is custom or not."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "appendOP": {
+        "title": "",
+        "content": "appendOP(name, label=None, order=None, replace=True)→ ParGroup: Create a node reference type parameter. This parameter will accept references to any operator.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendCOMP": {
+        "title": "",
+        "content": "appendCOMP(name, label=None, order=None, replace=True)→ ParGroup: Create a COMP node reference type parameter. This parameter will only accept references to COMPs, and will refuse operators of other families.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendObject": {
+        "title": "",
+        "content": "appendObject(name, label=None, order=None, replace=True)→ ParGroup: Create a 3D Object COMP node reference type parameter. This parameter will only accept references to 3D Object COMPs, and will refuse operators of other families.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendPanelCOMP": {
+        "title": "",
+        "content": "appendPanelCOMP(name, label=None, order=None, replace=True)→ ParGroup: Create a Panel COMP node reference type parameter. This parameter will only accept references to Panel COMPs, and will refuse operators of other families.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendTOP": {
+        "title": "",
+        "content": "appendTOP(name, label=None, order=None, replace=True)→ ParGroup: Create a TOP node reference type parameter. This parameter will only accept references to TOPs, and will refuse operators of other families.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendCHOP": {
+        "title": "",
+        "content": "appendCHOP(name, label=None, order=None, replace=True)→ ParGroup: Create a CHOP node reference type parameter. This parameter will only accept references to CHOPs, and will refuse operators of other families.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendSOP": {
+        "title": "",
+        "content": "appendSOP(name, label=None, order=None, replace=True)→ ParGroup: Create a SOP node reference type parameter. This parameter will only accept references to SOPs, and will refuse operators of other families.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendMAT": {
+        "title": "",
+        "content": "appendMAT(name, label=None, order=None, replace=True)→ ParGroup: Create a MAT node reference type parameter. This parameter will only accept references to MATs, and will refuse operators of other families.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendDAT": {
+        "title": "",
+        "content": "appendDAT(name, label=None, order=None, replace=True)→ ParGroup: Create a DAT node reference type parameter. This parameter will only accept references to DATs, and will refuse operators of other families.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendInt": {
+        "title": "",
+        "content": "appendInt(name, label=None, size=1, order=None, replace=True)→ ParGroup: Create a integer type parameter. Returns the created parameter group object.\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\nsize - (Keyword, Optional) Set the number of values associated with the parameter. When greater than 1, the parameter will be shown as multiple float fields without a slider and multiple parameters will be created with the index of the parameter appended to the parameter name, starting at 1.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendFloat": {
+        "title": "",
+        "content": "appendFloat(name, label=None, size=1, order=None, replace=True)→ ParGroup: Create a float type parameter. Returns the created parameter group object.\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\nsize - (Keyword, Optional) Set the number of values associated with the parameter. When greater than 1, the parameter will be shown as multiple float fields without a slider and multiple parameters will be created with the index of the parameter appended to the parameter name, starting at 1.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendXY": {
+        "title": "",
+        "content": "appendXY(name, label=None, order=None, replace=True)→ ParGroup: Create a XY position type parameter. Similar to creating a float parameter with size=2, but with more appropriate default naming.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendXYZ": {
+        "title": "",
+        "content": "appendXYZ(name, label=None, order=None, replace=True)→ ParGroup: Create a XYZ position type parameter. Similar to creating a float parameter with size=3, but with more appropriate default naming.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendXYZW": {
+        "title": "",
+        "content": "appendXYZW(name, label=None, order=None, replace=True)→ ParGroup: Create a XYZW position type parameter. Similar to creating a float parameter with size=4, but with more appropriate default naming.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendWH": {
+        "title": "",
+        "content": "appendWH(name, label=None, order=None, replace=True)→ ParGroup: Create a WH size type parameter. Similar to creating a float parameter with size=2, but with more appropriate default naming.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendUV": {
+        "title": "",
+        "content": "appendUV(name, label=None, order=None, replace=True)→ ParGroup: Create a UV 2D texture type parameter. Similar to creating a float parameter with size=2, but with more appropriate default naming.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendUVW": {
+        "title": "",
+        "content": "appendUVW(name, label=None, order=None, replace=True)→ ParGroup: Create a UVW 3D texture type parameter. Similar to creating a float parameter with size=3, but with more appropriate default naming.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendRGB": {
+        "title": "",
+        "content": "appendRGB(name, label=None, order=None, replace=True)→ ParGroup: Create a RGB color type parameter. Similar to creating a float parameter with size=3, but with more appropriate default naming.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendRGBA": {
+        "title": "",
+        "content": "appendRGBA(name, label=None, order=None, replace=True)→ ParGroup: Create a RGBA color type parameter. Similar to creating a float parameter with size=4, but with more appropriate default naming.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendStr": {
+        "title": "",
+        "content": "appendStr(name, label=None, order=None, replace=True)→ ParGroup: Create a string type parameter. Returns the created parameter group object.\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendStrMenu": {
+        "title": "",
+        "content": "appendStrMenu(name, label=None, order=None, replace=True)→ ParGroup: Create a menu type parameter. Returns the created parameter group object.\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendMenu": {
+        "title": "",
+        "content": "appendMenu(name, label=None, order=None, replace=True)→ ParGroup: Create a menu type parameter. Returns the created parameter group object.\nTo set the actual menu entries, use the Par members: .menuNames and .menuLabels.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendFile": {
+        "title": "",
+        "content": "appendFile(name, label=None, order=None, replace=True)→ ParGroup: Create a file reference type parameter. Has built-in functionality to open a new file picker window.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendFileSave": {
+        "title": "",
+        "content": "appendFileSave(name, label=None, order=None, replace=True)→ ParGroup: Create a file save reference type parameter. Has built-in functionality to open a new file picker window.\nReturns the created parameter objects.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendFolder": {
+        "title": "",
+        "content": "appendFolder(name, label=None, order=None, replace=True)→ ParGroup: Create a folder reference type parameter. Has built-in functionality to open a new folder picker window.\nReturns the created parameter group object.\n\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendPulse": {
+        "title": "",
+        "content": "appendPulse(name, label=None, order=None, replace=True)→ ParGroup: Create a pulse button type parameter. Returns the created parameter group object.\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendMomentary": {
+        "title": "",
+        "content": "appendMomentary(name, label=None, order=None, replace=True)→ ParGroup: Create a momentary button type parameter. Returns the created parameter group object.\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendToggle": {
+        "title": "",
+        "content": "appendToggle(name, label=None, order=None, replace=True)→ ParGroup: Create a toggle button type parameter. Returns the created parameter group object.\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendPython": {
+        "title": "",
+        "content": "appendPython(name, label=None, order=None, replace=True)→ ParGroup: Create a python expression parameter. Returns the created parameter group object.\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendPar": {
+        "title": "",
+        "content": "appendPar(name, par=None, label=None, order=None, replace=True)→ ParGroup: Create a parameter with attributes copied from an existing parameter. Returns the created parameter group object.\nname - The name of the parameter. Built-in names can be used as they will be automatically adjusted to match proper custom name casing (begin with uppercase letter followed by lowercase letters and numbers only).\npar - (Keyword, Optional) The parameter to copy attributes from. If none specified, a default parameter created.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendHeader": {
+        "title": "",
+        "content": "appendHeader(name, label=None, order=None, replace=True)→ ParGroup: Create a header parameter. Returns the created parameter group object. Only the value will be shown, not its label.\nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "appendSequence": {
+        "title": "",
+        "content": "appendSequence(name, label=None, order=None, replace=True)→ ParGroup: Create a Sequence header parameter. Returns the created parameter group object. \nname - The name of the parameter.\nlabel - (Keyword, Optional) The displayed label of the parameter, default will use the name argument.\norder - (Keyword, Optional) Specify the display order of the parameter, default is highest.\nreplace - (Keyword, Optional) By default, replaces parameter with fresh attributes. If False, it errors if the parameter already exists."
+      },
+      "destroy": {
+        "title": "",
+        "content": "destroy()→ None: Destroy the page this object refers to, and all its parameters."
+      },
+      "sort": {
+        "title": "",
+        "content": "sort(*pars)→ None: Reorder custom parameter groups or parameters in specified order.\nn = op('base1')\npage = n.appendCustomPage('Custom1')\npage.appendFloat('Value')\npage.appendFloat('Speed')\npage.appendFloat('Color')\npage.sort('Speed','Color','Value')"
+      },
+      "resetPars": {
+        "title": "",
+        "content": "resetPars()→ bool: Resets all the parameters in the page.\nReturns true if anything was changed.\n\nop('geo1').pages[0].resetPars() \nop('player').customPages['Setup'].resetPars() TouchDesigner Build: Latest\\nwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditormw-revertedmw-manual-revert2023.112802021.100002020.200002018.28070before 2018.28070"
+      }
+    }
+  }
+}

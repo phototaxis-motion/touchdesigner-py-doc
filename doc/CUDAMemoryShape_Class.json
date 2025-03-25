@@ -1,0 +1,33 @@
+{
+  "className": "CUDAMemoryShape_Class",
+  "url": "https://docs.derivative.ca/CUDAMemoryShape_Class",
+  "content": {
+    "title": "CUDAMemoryShape Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "width": {
+        "title": "",
+        "content": "width → int : Get/Set the width in pixels of the memory."
+      },
+      "height": {
+        "title": "",
+        "content": "height → int : Get/Set the height in pixels of the memory."
+      },
+      "numComps": {
+        "title": "",
+        "content": "numComps → int : Get/Set the number of color components per pixel of the memory."
+      },
+      "dataType": {
+        "title": "",
+        "content": "dataType → numpy.dtype : Get/Set the data type of each color component, as a numpy data type. E.g numpy.uint8, numpy.float32. Note that for uint8 data types, the channel ordering will be BGRA for 4 component textures. It will be RGBA however for other data types."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      }
+    }
+  }
+}

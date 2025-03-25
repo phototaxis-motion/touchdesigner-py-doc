@@ -1,0 +1,65 @@
+{
+  "className": "License_Class",
+  "url": "https://docs.derivative.ca/License_Class",
+  "content": {
+    "title": "License Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "index": {
+        "title": "",
+        "content": "index → int (Read Only): The license index in the list."
+      },
+      "isEnabled": {
+        "title": "",
+        "content": "isEnabled → bool (Read Only): True if the license is locally enabled (That is, it has never been disabled)."
+      },
+      "isRemotelyDisabled": {
+        "title": "",
+        "content": "isRemotelyDisabled → bool (Read Only): True if the license has been remotely disabled."
+      },
+      "key": {
+        "title": "",
+        "content": "key → str (Read Only): The key sequence."
+      },
+      "remoteDisableDate": {
+        "title": "",
+        "content": "remoteDisableDate → tuple[int, int, int] (Read Only): The date the license was remotely disabled, expressed as a tuple (year, month, day)."
+      },
+      "status": {
+        "title": "",
+        "content": "status → int (Read Only): The numeric status code. Negative values indicate the license is not applicable to the current application. A value of zero indicates it does."
+      },
+      "statusMessage": {
+        "title": "",
+        "content": "statusMessage → str (Read Only): A description of the status code."
+      },
+      "systemCode": {
+        "title": "",
+        "content": "systemCode → str (Read Only): The system code associated with this license."
+      },
+      "type": {
+        "title": "",
+        "content": "type → str (Read Only): The license type, e.g. some products being 'Pro', 'Non-Commercial', 'Commercial'. See also app.product in App Class"
+      },
+      "updateExpiryDate": {
+        "title": "",
+        "content": "updateExpiryDate → tuple[int, int, int] (Read Only): The date updates for this license expires, expressed as a tuple (year, month, day)."
+      },
+      "version": {
+        "title": "",
+        "content": "version → int (Read Only): The numeric license version."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "serverDisable": {
+        "title": "",
+        "content": "serverDisable()→ None: Disable this license. Use with caution! TouchDesigner Build: \nLatest\\nwikieditor\nwikieditor\nwikieditor\nwikieditor\nwikieditor\n2021.10000\n2018.28070\nbefore 2018.28070 Retrieved from \"https://docs.derivative.ca/index.php?title=License_Class&oldid=31578\""
+      }
+    }
+  }
+}

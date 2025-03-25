@@ -1,0 +1,41 @@
+{
+  "className": "MOD_Class",
+  "url": "https://docs.derivative.ca/MOD_Class",
+  "content": {
+    "title": "MOD Class",
+    "items": {
+      "toc": {
+        "title": "Contents\n1 Members\n2 Methods\n3 Usage\n4 Comparing Usage\n5 Search Path",
+        "content": ""
+      },
+      "toctogglecheckbox": {
+        "title": "",
+        "content": "Contents 1 Members\n2 Methods\n3 Usage\n4 Comparing Usage\n5 Search Path"
+      },
+      "mw-toc-heading": {
+        "title": "Contents",
+        "content": "1 Members\n2 Methods\n3 Usage\n4 Comparing Usage\n5 Search Path"
+      },
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "Usage": {
+        "title": "Usage",
+        "content": "[edit] There are three methods to import DATs as modules in a script. import datNameImport the module defined by the DAT named datName. All regular import options are supported (from, as, etc). If a DAT is not found, the regular file system search path is then used.# import a DAT named addMonth\nimport addMonths\n\nm = mod.datNameImport the module defined by the DAT named datName.m = mod.addMonths(1,2,3)\n\nm = mod(pathToDat)Similar to above, except a path to the DAT can be used.m = mod('myMods/adders').addMonths(1,2,3)"
+      },
+      "Comparing_Usage": {
+        "title": "Comparing Usage",
+        "content": "[edit] Example using import: import myUtils\na = myUtils.add(5,6) Same example using mod: a = mod.myUtils.add(5,6) Example using mod outside the search path: a = mod('/projects/utils/utilsA').add(5,6) Notice however, that a single import statement will be faster than the case of multiple identical mod statements: import myUtils\na = myUtils.add(5,6)\nb = myUtils.add(5,6)\nc = myUtils.add(5,6) will execute faster than: a = mod.myUtils.add(5,6)\nb = mod.myUtils.add(5,6)\nc = mod.myUtils.add(5,6) However the above could be rewritten more efficiently like this, which would then execute at the same speed as the import statement: m = mod.myUtils\na = m.add(5,6)\nb = m.add(5,6)\nc = m.add(5,6)"
+      },
+      "Search_Path": {
+        "title": "Search Path",
+        "content": "[edit] The current component is searched first. If the DAT is not found, the local/modules component of the current component is then searched. Next the local/modules component of each parent is successively searched. If the DAT is still not found, None is returned. TouchDesigner Build: Latest\\n2021.100002018.28070before 2018.28070"
+      }
+    }
+  }
+}

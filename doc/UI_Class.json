@@ -1,0 +1,209 @@
+{
+  "className": "UI_Class",
+  "url": "https://docs.derivative.ca/UI_Class",
+  "content": {
+    "title": "UI Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "clipboard": {
+        "title": "",
+        "content": "clipboard → str : Get or set the operating system clipboard text contents."
+      },
+      "colors": {
+        "title": "",
+        "content": "colors → Colors (Read Only): Access to the application colors."
+      },
+      "dpiBiCubicFilter": {
+        "title": "",
+        "content": "dpiBiCubicFilter → bool : Get or set the global DPI scale filtering mode of TouchDesigner windows. True means bi-cubic, False means linear."
+      },
+      "masterVolume": {
+        "title": "",
+        "content": "masterVolume → float : Get or set the master audio output volume. A value of 0 is no output, while a value of 1 is full output."
+      },
+      "options": {
+        "title": "",
+        "content": "options → Options (Read Only): Access to the application options."
+      },
+      "panes": {
+        "title": "",
+        "content": "panes → Panes (Read Only): Access to the set of all panes."
+      },
+      "performMode": {
+        "title": "",
+        "content": "performMode → bool : Get or set Perform Mode.  Set to True to go into Perform Mode, False to go into Designer Mode."
+      },
+      "preferences": {
+        "title": "",
+        "content": "preferences → Preferences (Read Only): Access to the application preferences, which can also be access through the Preferences Dialog."
+      },
+      "redrawMainWindow": {
+        "title": "",
+        "content": "redrawMainWindow → bool : Get or set whether the main window should redraw. The main window is either the main network editor, or the perform window."
+      },
+      "rolloverOp": {
+        "title": "",
+        "content": "rolloverOp → OP (Read Only): Operator currently under the mouse in a network editor."
+      },
+      "rolloverPar": {
+        "title": "",
+        "content": "rolloverPar → Par (Read Only): Parameter currently under the mouse in a parameter dialog."
+      },
+      "rolloverPanel": {
+        "title": "",
+        "content": "rolloverPanel → PanelCOMP (Read Only): returns the latest panel to get a rollover event. Takes into account click through, depth order, and other panel settings."
+      },
+      "lastChopChannelSelected": {
+        "title": "",
+        "content": "lastChopChannelSelected → Channel (Read Only): Last CHOP channel selected via mouse."
+      },
+      "showPaletteBrowser": {
+        "title": "",
+        "content": "showPaletteBrowser → bool : Get or set display of the palette browser."
+      },
+      "status": {
+        "title": "",
+        "content": "status → str : Get or set the status message.\nui.status = 'Operation Complete'"
+      },
+      "undo": {
+        "title": "",
+        "content": "undo → Undo (Read Only): The Undo object, which provides access to application undo functions."
+      },
+      "windowWidth": {
+        "title": "",
+        "content": "windowWidth → int (Read Only): Get the app window width."
+      },
+      "windowHeight": {
+        "title": "",
+        "content": "windowHeight → int (Read Only): Get the app window height."
+      },
+      "windowX": {
+        "title": "",
+        "content": "windowX → int (Read Only): Get the app window X position."
+      },
+      "windowY": {
+        "title": "",
+        "content": "windowY → int (Read Only): Get the app window Y position."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "copyOPs": {
+        "title": "",
+        "content": "copyOPs(listOfOPs)→ None: Copy a list of operators to the operator clipboard. All operators must be children of the same component.\nlistOfOPs - A list containing one or more OPs to be copied.ui.copyOPs( op('geo1').selected )"
+      },
+      "pasteOPs": {
+        "title": "",
+        "content": "pasteOPs(COMP, x=None, y=None)→ None: Copy the contents of the operator clipboard into the specified component.\nCOMP - The destination to receive the operators.\nx - Optional network coordinates at which to paste the operators.\ny - see xl = ui.pasteOPs( op('geo2') )"
+      },
+      "messageBox": {
+        "title": "",
+        "content": "messageBox(title, message, buttons=['Ok'])→ int: This method will open a message dialog box with the specified message.  Returns the index of the button clicked.\ntitle - Specifies the window title.\nmessage - Specifies the content of the dialog.\nbuttons - (Keyword, Optional) Specifies a list button labels to show in the dialog.# basic usage\nui.messageBox('Warning', 'Have a nice day.')\n# specify options and report result\na = ui.messageBox('Please select:', 'Buttons:', buttons=['a', 'b', 'c'])\nui.messageBox('Results', 'You selected item: ' + str(a))\n# pick a node from their paths\nui.messageBox('Please select:', 'Nodes:', buttons=parent().children)\n# pick a node from their first names (list comprehension)\nui.messageBox('Please select:', 'Nodes:', buttons=[x.name for x in parent().children])\n# pick a cell\nui.messageBox('Please select:', 'Cells:', buttons=op('table1').cells('*','*'))"
+      },
+      "refresh": {
+        "title": "",
+        "content": "refresh()→ None: Update and redraw all viewports, nodes, UI elements etc immediately. This update is otherwise done once per frame at the end of all script executions. For example, if the current frame is manually changed during a script, a call to refresh will cause all dependent data to update immediately.\nfor i in range(100):\n\tui.status = str(i)\n\tui.refresh()"
+      },
+      "chooseFile": {
+        "title": "",
+        "content": "chooseFile(load=True, start=None, fileTypes=None, title=None, asExpression=False)→ str | None: Open a dialog box for loading or saving a file.  Returns the filename selected or None if the dialog is cancelled.\nload - (Keyword, Optional) If set to True, the dialog will be a Load dialog, otherwise it's a Save dialog.\nstart - (Keyword, Optional) If provided, specifies an initial folder location and/or filename selection.\nfileTypes - (Keyword, Optional) If provided, specifies a list of file extensions that can be used as filters. Otherwise '*.*' is the only filter.\nasExpression - (Keyword, Optional) If set to true, the results are provided as an expression, suitable for a Parameter expression or as input to an eval() call.  App Class member constants such as samplesFolder may be included in the result.\ntitle (Keyword, Optional) If provided, will override the default window title.a = ui.chooseFile(start='python_examples.toe', fileTypes=['toe'], title='Select a toe') # specify extension\na = ui.chooseFile(fileTypes=tdu.fileTypes['image'], title='Select an image') # any support image extension\npath = ui.chooseFile(load=False,fileTypes=['txt'],title='Save table as:')\nif (path):\n\top('table1').save(path)"
+      },
+      "chooseFolder": {
+        "title": "",
+        "content": "chooseFolder(title='Select Folder', start=None, asExpression=False)→ str | None: Open a dialog box for selecting a folder.  Returns the folder selected or None if the dialog is cancelled.\ntitle - (Keyword, Optional) If provided, specifies the window title.\nstart - (Keyword, Optional) If provided, specifies an initial folder location and/or filename selection.\nasExpression - (Keyword, Optional) If set to true, the results are provided as an expression, suitable for a Parameter expression or as input to an eval() call.  App Class member constants such as samplesFolder may be included in the result.a = ui.chooseFolder()\na = ui.chooseFolder(title='Select a folder location.')"
+      },
+      "viewFile": {
+        "title": "",
+        "content": "viewFile(URL_or_path, showInFolder=False)→ None: View a URL or file in the default external application. You can use ui.viewFile() to open a folder/directory in Windows Explorer or macOS Finder.\nURL_or_path - URL or path to launch.a = ui.viewFile('output.txt')\n\nshowInFolder - Show file as selected in Explorer or macOS Finder instead of launching an external application.a = ui.viewFile('output.txt', showInFolder=True)"
+      },
+      "openBeat": {
+        "title": "",
+        "content": "openBeat()→ None: Open the Beat Dialog."
+      },
+      "openBookmarks": {
+        "title": "",
+        "content": "openBookmarks()→ None: Open the Bookmarks Dialog."
+      },
+      "openCOMPEditor": {
+        "title": "",
+        "content": "openCOMPEditor(path)→ None: Open component editor for the specific operator.\npath - Specifies the path to the operator.  An OP can be passed in as well."
+      },
+      "openConsole": {
+        "title": "",
+        "content": "openConsole()→ None: Open the Console Window."
+      },
+      "openDialogHelp": {
+        "title": "",
+        "content": "openDialogHelp(title)→ None: Open help page for the specific dialog.\ntitle - Specifies the help page to open.ui.openDialogHelp('Window Placement Dialog')"
+      },
+      "openErrors": {
+        "title": "",
+        "content": "openErrors()→ None: Open the Errors Dialog."
+      },
+      "openExplorer": {
+        "title": "",
+        "content": "openExplorer()→ None: Open an Explorer window."
+      },
+      "openExportMovie": {
+        "title": "",
+        "content": "openExportMovie(path)→ None: Open the Export Movie Dialog.\npath - Specifies the operator content to export, optional.ui.openExportMovie('/project1/out1')"
+      },
+      "openImportFile": {
+        "title": "",
+        "content": "openImportFile()→ None: Open the Import File Dialog."
+      },
+      "openKeyManager": {
+        "title": "",
+        "content": "openKeyManager()→ None: Open the Key Manager Dialog."
+      },
+      "openMIDIDeviceMapper": {
+        "title": "",
+        "content": "openMIDIDeviceMapper()→ None: Open the MIDI Device Mapper Dialog."
+      },
+      "openNewProject": {
+        "title": "",
+        "content": "openNewProject()→ None: Open the New Project Dialog."
+      },
+      "openOperatorSnippets": {
+        "title": "",
+        "content": "openOperatorSnippets(family=None, type=None, example=None)→ None: Open the Operator Snippets window."
+      },
+      "openPaletteBrowser": {
+        "title": "",
+        "content": "openPaletteBrowser()→ None: Open the Palette."
+      },
+      "openPerformanceMonitor": {
+        "title": "",
+        "content": "openPerformanceMonitor()→ None: Open the Performance Monitor Dialog."
+      },
+      "openPreferences": {
+        "title": "",
+        "content": "openPreferences()→ None: Open the Preferences Dialog."
+      },
+      "openSearch": {
+        "title": "",
+        "content": "openSearch()→ None: Open the Search Replace Dialog."
+      },
+      "openTextport": {
+        "title": "",
+        "content": "openTextport()→ None: Open the Textport."
+      },
+      "openVersion": {
+        "title": "",
+        "content": "openVersion()→ None: Open a dialog displaying current version information.\nSee also: App.version"
+      },
+      "openWindowPlacement": {
+        "title": "",
+        "content": "openWindowPlacement()→ None: Open the Window Placement Dialog."
+      },
+      "findEditDAT": {
+        "title": "",
+        "content": "findEditDAT(filename)→ DAT | None: Given an external filename, finds the corresponding DAT thats update from this filename if any.. TouchDesigner Build: Latest\\nwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditor2022.241402021.100002018.28070before 2018.28070"
+      }
+    }
+  }
+}

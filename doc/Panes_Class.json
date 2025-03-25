@@ -1,0 +1,41 @@
+{
+  "className": "Panes_Class",
+  "url": "https://docs.derivative.ca/Panes_Class",
+  "content": {
+    "title": "Panes Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "current": {
+        "title": "",
+        "content": "current → td.Pane (Read Only): The currently selected pane."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "createFloating": {
+        "title": "",
+        "content": "createFloating(type=None, name=None, maxWidth=1920, maxHeight=1080, monitorSpanWidth=0.9, monitorSpanHeight=0.9)→ Pane: Return a floating pane.\ntype - (Keyword, Optional) Type of pane created. See Pane for examples. Defaults to Network Editor.\nname - (Keyword, Optional) Name of the pane.  This value can be used to find the pane in ui.panes.\nmaxWidth - (Keyword, Optional) Upper limit on the width of the created window. Specified in pixels.\nmaxHeight - (Keyword, Optional) Upper limit on the height of the created window. Specified in pixels.\nmonitorSpanWidth - (Keyword, Optional) Specifies window width as a portion of the monitor width.\nmonitorSpanHeight - (Keyword, Optional) Specifies window height as a portion of the monitor height.Example\n\n    p = ui.panes.createFloating(type=PaneType.NETWORKEDITOR, name=\"Output\")\n    p.owner = op('/project1/base1')"
+      },
+      "Special_Functions": {
+        "title": "Special Functions",
+        "content": "[edit]"
+      },
+      "len": {
+        "title": "",
+        "content": "len(Panes)→ int: Returns the total number of panes.\na = len(ui.panes)"
+      },
+      "[]": {
+        "title": "",
+        "content": "[index]→ td.Pane: Get specific pane, referenced by string or index.\np = ui.panes[0]\np = ui.panes['pane1']"
+      },
+      "iterator": {
+        "title": "",
+        "content": "Iterator→ td.Pane: Iterate over each pane.\nfor n in ui.panes:\n\t# do something with n TouchDesigner Build: Latest\\nwikieditorwikieditor2021.100002018.28070before 2018.28070"
+      }
+    }
+  }
+}

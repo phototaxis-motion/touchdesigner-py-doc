@@ -1,0 +1,85 @@
+{
+  "className": "Vector_Class",
+  "url": "https://docs.derivative.ca/Vector_Class",
+  "content": {
+    "title": "Vector Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "x": {
+        "title": "",
+        "content": "x → float : Gets or sets the X component of the vector."
+      },
+      "y": {
+        "title": "",
+        "content": "y → float : Gets or sets the Y component of the vector."
+      },
+      "z": {
+        "title": "",
+        "content": "z → float : Gets or sets the Z component of the vector."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "angle": {
+        "title": "",
+        "content": "angle(vec)→ float: Returns the angel (in degrees) between the current vector and specified vector (vec).\nd = v.angle(v2)"
+      },
+      "scale": {
+        "title": "",
+        "content": "scale(x, y, z)→ None: Scales each component of the vector by the specified values.\nx, y, z - The values to scale each component of the vector by.\nv.scale(1, 2, 1)"
+      },
+      "normalize": {
+        "title": "",
+        "content": "normalize()→ None: Makes the length of this vector 1.\nm.normalize()"
+      },
+      "length": {
+        "title": "",
+        "content": "length()→ float: Returns the length of this vector.\nl = m.length()"
+      },
+      "lengthSquared": {
+        "title": "",
+        "content": "lengthSquared()→ float: Returns the squared length of this vector.\nl = v.lengthSquared()"
+      },
+      "copy": {
+        "title": "",
+        "content": "copy()→ tdu.Vector: Returns a new vector that is a copy of the vector.\nnewV = v.copy()"
+      },
+      "distance": {
+        "title": "",
+        "content": "distance(vec)→ float: Returns the distance of the current vector to specified vector (vec).\nl = v.distance(v2)"
+      },
+      "lerp": {
+        "title": "",
+        "content": "lerp(vec2, t)→ tdu.Vector: Returns the linear interpolation of this vector and vec2. That is vec1 * (1.0 - t) + vec2 * t, where vec1 is the current vector.  The value for t is not restricted to the range [0, 1].\nl = v.lerp(v2, t)"
+      },
+      "slerp": {
+        "title": "",
+        "content": "slerp(vec2, t)→ tdu.Vector: Returns the spherical interpolation of this vector and vec2. The value for t is not restricted to the range [0, 1].\nl = v.slerp(v2, t)"
+      },
+      "dot": {
+        "title": "",
+        "content": "dot(vec)→ float: Returns the dot product of this vector and the passed vector.\nvec - The other vector to use to calculate the dot product\nd = v.dot(otherV)"
+      },
+      "cross": {
+        "title": "",
+        "content": "cross(vec)→ tdu.Vector: Returns the cross product of this vector and the passed vector. The operation is self cross vec.\nvec - The other vector to use to calculate the cross product.\nc = v.cross(otherV)"
+      },
+      "project": {
+        "title": "",
+        "content": "project(vec, vec)→ None: Projects this vector onto the plan defined by vec1 and vec2. Both vec1 and vec2 must be normalized. The result may not be normalized.\nvec1, vec2 - The  vectors that specify the plane to project onto. Must be normalized.\nv.project(v1, v2)"
+      },
+      "reflect": {
+        "title": "",
+        "content": "reflect(vec)→ None: Reflects the current vector about the specified vector (vec).\nv.reflect(v2)"
+      },
+      "Special_Functions": {
+        "title": "Special Functions",
+        "content": ""
+      }
+    }
+  }
+}

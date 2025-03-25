@@ -1,0 +1,101 @@
+{
+  "className": "Monitor_Class",
+  "url": "https://docs.derivative.ca/Monitor_Class",
+  "content": {
+    "title": "Monitor Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "index": {
+        "title": "",
+        "content": "index → int (Read Only): The monitor position in the list."
+      },
+      "isPrimary": {
+        "title": "",
+        "content": "isPrimary → bool (Read Only): Returns true, if this monitor is the primary display."
+      },
+      "isAffinity": {
+        "title": "",
+        "content": "isAffinity → bool (Read Only): Returns true, if this monitor is connected to the GPU that has been selected for GPU Affinity. Always True if GPU Affinity is not used."
+      },
+      "width": {
+        "title": "",
+        "content": "width → int (Read Only): The width of the monitor area, measured in pixels."
+      },
+      "height": {
+        "title": "",
+        "content": "height → int (Read Only): The height of the monitor area, measured in pixels."
+      },
+      "left": {
+        "title": "",
+        "content": "left → int (Read Only): The position of left edge of the monitor area, measured in pixels."
+      },
+      "right": {
+        "title": "",
+        "content": "right → int (Read Only): The position of right edge of the monitor area, measured in pixels."
+      },
+      "top": {
+        "title": "",
+        "content": "top → int (Read Only): The position of top edge of the monitor area, measured in pixels."
+      },
+      "bottom": {
+        "title": "",
+        "content": "bottom → int (Read Only): The position of bottom edge of the monitor area, measured in pixels."
+      },
+      "displayName": {
+        "title": "",
+        "content": "displayName → str (Read Only): The unique display name associated with this monitor."
+      },
+      "description": {
+        "title": "",
+        "content": "description → str (Read Only): A description of the monitor or its display adapter."
+      },
+      "dpiScale": {
+        "title": "",
+        "content": "dpiScale → float (Read Only): The DPI Scaling factor the monitor is current set to."
+      },
+      "scaledWidth": {
+        "title": "",
+        "content": "scaledWidth → int (Read Only): The width of the monitor area, measured in points."
+      },
+      "scaledHeight": {
+        "title": "",
+        "content": "scaledHeight → int (Read Only): The height of the monitor area, measured in points."
+      },
+      "scaledLeft": {
+        "title": "",
+        "content": "scaledLeft → int (Read Only): The position of left edge of the monitor area, measured in points."
+      },
+      "scaledRight": {
+        "title": "",
+        "content": "scaledRight → int (Read Only): The position of right edge of the monitor area, measured in points."
+      },
+      "scaledTop": {
+        "title": "",
+        "content": "scaledTop → int (Read Only): The position of top edge of the monitor area, measured in points."
+      },
+      "scaledBottom": {
+        "title": "",
+        "content": "scaledBottom → int (Read Only): The position of bottom edge of the monitor area, measured in points."
+      },
+      "serialNumber": {
+        "title": "",
+        "content": "serialNumber → str (Read Only): The serial number name associated with this monitor. May be blank."
+      },
+      "refreshRate": {
+        "title": "",
+        "content": "refreshRate → float (Read Only): The refresh rate the monitor is currently running at."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "Accessing_Monitors": {
+        "title": "Accessing Monitors",
+        "content": "[edit] See Monitors Class for examples on how to access individual monitors. TouchDesigner Build: Latest\\n2021.100002018.28070before 2018.28070"
+      }
+    }
+  }
+}

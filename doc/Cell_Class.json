@@ -1,0 +1,49 @@
+{
+  "className": "Cell_Class",
+  "url": "https://docs.derivative.ca/Cell_Class",
+  "content": {
+    "title": "Cell Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "valid": {
+        "title": "",
+        "content": "valid → bool (Read Only): True if the referenced cell currently exists, False if it has been deleted."
+      },
+      "row": {
+        "title": "",
+        "content": "row → int (Read Only): The numeric row of the cell."
+      },
+      "col": {
+        "title": "",
+        "content": "col → int (Read Only): The numeric column of the cell."
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "val": {
+        "title": "",
+        "content": "val → str : Get or set the cell contents, which are always stored as a string value."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "run": {
+        "title": "",
+        "content": "run(*args, endFrame=False, fromOP=None, asParameter=False, group=None, delayFrames=0, delayMilliSeconds=0, delayRef=None)→ td.Run: Run the contents of the cell as a script, returning a Run object which can be used to optionally modify its execution.\nendFrame - (Keyword, Optional) If set to True, the execution will be delayed until the end of the current frame.\nfromOP - (Keyword, Optional) Specifies an optional operator from which the execution will be run relative to.\nasParameter - (Keyword, Optional) When fromOP used, run relative to a parameter of fromOP.\ngroup - (Keyword, Optional) Can be used to specify a group label string. This label can then be used with the td.runs object to modify its execution.\ndelayFrames - (Keyword, Optional) Can be used to delay the execution a specific amount of frames.\ndelayMilliSeconds - (Keyword, Optional) Can be used to delay the execution a specific amount of milliseconds.  This value is rounded to the nearest frame.\ndelayRef - (Keyword, Optional) Specifies an optional operator from which the delay time is derived. If none is provided, will use the cell owner.\narg - (Optional) Arguments that will be made available to the script in a local tuple named args."
+      },
+      "offset": {
+        "title": "",
+        "content": "offset(r, c)→ Cell | None: The cell offset to this cell by the specified amount, or None.\nr - The number of rows from the cell.  Positive values count down, while negative values count up.\nc - The number of columns from the cell.  Positive values count right, while negative values count left.c = op('table1')['March', 'Sales']\nd = c.offset(-1, 2)  # one row up, two columns right of cell C"
+      },
+      "Casting_to_a_Value": {
+        "title": "Casting to a Value",
+        "content": "[edit] The Cell Class implements all necessary methods to be treated as a number or a string, which in this case gets or sets its value. Therefore, an explicit call to get or set val is unnecessary when used in a parameter, or in an expression.\nFor example, the following are equivalent in a numeric parameter: (float)n[1,2]\nn[1,2].val\nn[1,2] Or equivalently, for a string parameter: (str)n[1,2]\nn[1,2].val\nn[1,2] Similarly, expressions on Cells will autocast themselves automatically: n[1,2].val + 1 # string plus 1, error\nn[1,2] + 1 # autocasted value plus 1 In the second case, the contents of the Cell are used to determine if numeric or string operations should be used.\nFor example, if cell n[1,2] contains \"3\" then: n[1,2].val + n[1,2].val # will return \"33\" since .val is a string. However, n[1,2] + n[1,2] # will return 6 since the contents \"3\" are numeric. If n[1,2] contained a non-numeric value such as \"a\" then n[1,2] + n[1,2] # will return \"aa\" TouchDesigner Build: Latest\\nwikieditorwikieditorwikieditor2022.241402021.100002018.28070before 2018.28070"
+      }
+    }
+  }
+}

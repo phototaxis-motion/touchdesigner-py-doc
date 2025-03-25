@@ -1,0 +1,41 @@
+{
+  "className": "Color_Class",
+  "url": "https://docs.derivative.ca/Color_Class",
+  "content": {
+    "title": "Color Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "r": {
+        "title": "",
+        "content": "r → float : Gets or sets the red component of the color."
+      },
+      "g": {
+        "title": "",
+        "content": "g → float : Gets or sets the green component of the color."
+      },
+      "b": {
+        "title": "",
+        "content": "b → float : Gets or sets the blue component of the color."
+      },
+      "a": {
+        "title": "",
+        "content": "a → float : Gets or sets the alpha component of the color."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "[]": {
+        "title": "",
+        "content": "[index]→ float: Sample values may be accessed from a Color using the [] subscript operator."
+      },
+      "copy": {
+        "title": "",
+        "content": "copy()→ Color: Returns a new color that is a copy of the color. TouchDesigner Build: \nLatest\\n2022.24140\n2021.10000\n2018.28070\nbefore 2018.28070 Retrieved from \"https://docs.derivative.ca/index.php?title=Color_Class&oldid=26974\""
+      }
+    }
+  }
+}

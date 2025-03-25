@@ -1,0 +1,97 @@
+{
+  "className": "Quaternion_Class",
+  "url": "https://docs.derivative.ca/Quaternion_Class",
+  "content": {
+    "title": "Quaternion Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "x": {
+        "title": "",
+        "content": "x → float : Get or set the x component of the quaternion."
+      },
+      "y": {
+        "title": "",
+        "content": "y → float : Get or set the y component of the quaternion."
+      },
+      "z": {
+        "title": "",
+        "content": "z → float : Get or set the z component of the quaternion."
+      },
+      "w": {
+        "title": "",
+        "content": "w → float : Get or set the w component of the quaternion."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "lerp": {
+        "title": "",
+        "content": "lerp(q2, factor)→ quaternion: Returns the linear interpolation of the quaternion with another quaternion and an interpolation factor. \nThe quaternion argument can be anything from which a quaternion can be derived ie. (x,y,z,w), Matrix, etc.\nThe interpolation factor must be between 0 and 1.\n\nq3 = q.lerp(q2, factor)"
+      },
+      "length": {
+        "title": "",
+        "content": "length()→ float: Returns the length of the quaternion.\nl = q.length()"
+      },
+      "cross": {
+        "title": "",
+        "content": "cross(q2)→ vector: Returns the cross product of the quaternion and argument.\nThe quaternion argument can be anything from which a quaternion can be derived ie. (x,y,z,w), Matrix, etc.\n\nl = q.cross(q2)"
+      },
+      "rotate": {
+        "title": "",
+        "content": "rotate(vec)→ vector: Rotates a vector using the current quaternion. Returns a new vector.\nv2 = q.rotate(v1)"
+      },
+      "slerp": {
+        "title": "",
+        "content": "slerp(q2, factor)→ quaternion: Returns the spherical interpolation of the quaternion with another quaternion and an interpolation factor.\nThe quaternion argument can be anything from which a quaternion can be derived ie. (x,y,z,w), Matrix, etc.\n\nq3 = q.slerp(q2, factor)"
+      },
+      "eulerAngles": {
+        "title": "",
+        "content": "eulerAngles(order='xyz')→ tuple: Returns euler angles in degrees as a tuple (i.e. pitch as x, yaw as y, roll as z) from current quaternion and a rotation order. The 'order' argument can be set to any valid rotation order which by default is set to 'xyz'. \nr = q.eulerAngles(order='xyz')"
+      },
+      "fromEuler": {
+        "title": "",
+        "content": "fromEuler(order='xyz')→ tuple: Returns and set the current quaternion from euler angles in degrees as a 3 inputs argument (i.e. pitch as x, yaw as y, roll as z). The 'order' argument can be set to any valid rotation order which by default is set to 'xyz'.\nr = q.fromEuler(order='xyz')"
+      },
+      "axis": {
+        "title": "",
+        "content": "axis()→ vector: Returns the rotation axis vector of the quaternion.\nv = q.axis()"
+      },
+      "dot": {
+        "title": "",
+        "content": "dot(q2)→ float: Returns the dot product of the quaternion and the argument.\nThe quaternion argument can be anything from which a quaternion can be derived ie. (x,y,z,w), Matrix, etc.\n\nl = q.dot(q2)"
+      },
+      "exp": {
+        "title": "",
+        "content": "exp()→ quaternion: Returns the exponential of the quaternion as a new quaternion.\nq2 = q.exp()"
+      },
+      "copy": {
+        "title": "",
+        "content": "copy()→ quaternion: Creates a copy of the quaternion with separate values."
+      },
+      "log": {
+        "title": "",
+        "content": "log()→ quaternion: Returns the natural logarithm of the current quaternion as a new quaternion.\nl = q.log()"
+      },
+      "inverse": {
+        "title": "",
+        "content": "inverse()→ None: Invert the quaternion in place.\nq.inverse()"
+      },
+      "angle": {
+        "title": "",
+        "content": "angle()→ float: Returns the rotation angle (in degrees) of the quaternion.\na = q.angle()"
+      },
+      "Special_Functions": {
+        "title": "Special Functions",
+        "content": "[edit]"
+      },
+      "*=": {
+        "title": "",
+        "content": "Quaternion *= Quaternion→ Quaternion: Applies the rotation of one quaternion to another quaternion.\n# apply rotation of q2 to q1\nq1 *= q2 TouchDesigner Build: Latest\\nwikieditorwikieditor2021.100002018.28070before 2018.28070"
+      }
+    }
+  }
+}

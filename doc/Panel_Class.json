@@ -1,0 +1,21 @@
+{
+  "className": "Panel_Class",
+  "url": "https://docs.derivative.ca/Panel_Class",
+  "content": {
+    "title": "Panel Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs.\nIn addition to the above, this object contains a member for each panel value in the component.\n\na = op('button1').panel.u"
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      }
+    }
+  }
+}

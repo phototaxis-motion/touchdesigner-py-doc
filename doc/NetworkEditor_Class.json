@@ -1,0 +1,181 @@
+{
+  "className": "NetworkEditor_Class",
+  "url": "https://docs.derivative.ca/NetworkEditor_Class",
+  "content": {
+    "title": "NetworkEditor Class",
+    "items": {
+      "toc": {
+        "title": "Contents\n1 Members\n2 Methods\n3 Pane Class\n3.1 Members\n3.2 Methods",
+        "content": ""
+      },
+      "toctogglecheckbox": {
+        "title": "",
+        "content": "Contents 1 Members\n2 Methods\n3 Pane Class\n3.1 Members\n3.2 Methods"
+      },
+      "mw-toc-heading": {
+        "title": "Contents",
+        "content": "1 Members\n2 Methods\n3 Pane Class\n3.1 Members\n3.2 Methods"
+      },
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "showBackdropCHOPs": {
+        "title": "",
+        "content": "showBackdropCHOPs → bool : Enable or disable CHOP viewers as backdrops."
+      },
+      "showBackdropGeometry": {
+        "title": "",
+        "content": "showBackdropGeometry → bool : Enable or disable SOP and Geometry object viewers as backdrops."
+      },
+      "showBackdropTOPs": {
+        "title": "",
+        "content": "showBackdropTOPs → bool : Enable or disable TOP viewers as backdrops."
+      },
+      "showColorPalette": {
+        "title": "",
+        "content": "showColorPalette → bool : Enable or disable display of the operator color palette selector."
+      },
+      "showDataLinks": {
+        "title": "",
+        "content": "showDataLinks → bool : Enable or disable disable of operator data links."
+      },
+      "showList": {
+        "title": "",
+        "content": "showList → bool : Control display of operators as a list, or connected nodes."
+      },
+      "showNetworkOverview": {
+        "title": "",
+        "content": "showNetworkOverview → bool : Enable or disable display of the network overview."
+      },
+      "showParameters": {
+        "title": "",
+        "content": "showParameters → bool : Enable or disable display of the currently selected operator parameters."
+      },
+      "straightLinks": {
+        "title": "",
+        "content": "straightLinks → bool : Control display of operator links as straight or curved."
+      },
+      "x": {
+        "title": "",
+        "content": "x → float : Get or set the x coordinate of the network editor area,  where 1 unit = 1 pixel when zoom = 1."
+      },
+      "y": {
+        "title": "",
+        "content": "y → float : Get or set the y coordinate of the network editor area, where 1 unit = 1 pixel when zoom = 1."
+      },
+      "zoom": {
+        "title": "",
+        "content": "zoom → float : Get or set the zoom factor of the network editor area, where a zoom factor of 1 draws each node at its unscaled resolution."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "fitWidth": {
+        "title": "",
+        "content": "fitWidth(width)→ None: Fit the network area to specified width, specified in node units.  This affects the zoom factor.\nwidth - The width to fit to."
+      },
+      "fitHeight": {
+        "title": "",
+        "content": "fitHeight(height)→ None: Fit the network area to specified height, specified in node units. This affects the zoom factor.\nheight - The height to fit to."
+      },
+      "home": {
+        "title": "",
+        "content": "home(zoom=True, op=None)→ None: Home all operators in the network.\nzoom - (Keyword, Optional) When true, the view will be scaled accordingly, otherwise the nodes will only be re-centered.\nop - (Keyword, Optional) If an operator is specified, the network will be homed around its location.p = ui.panes['pane1']\nn = op('/project1')\np.home(op=n)\np = ui.panes[2]\np.home(zoom=True)"
+      },
+      "homeSelected": {
+        "title": "",
+        "content": "homeSelected(zoom=True)→ None: Home all selected operators in the network.\nzoom - (Keyword, Optional) When true, the view will be scaled accordingly, otherwise the nodes will only be re-centered."
+      },
+      "placeOPs": {
+        "title": "",
+        "content": "placeOPs(listOfOPs, inputIndex=None, outputIndex=None, delOP=None, undoName='Operators')→ None: Use the mouse to place the specified operators in the pane.\nlistOfOps - The list of operators to be placed.\ninputIndex - If specified, which input index to connect to.\noutputIndex - If specified, which output index to connect to.\ndelOP - If specified, deletes that operator immediately after placing the listOfOPs.\nundoName - Describes the Undo operation."
+      },
+      "Pane_Class": {
+        "title": "Pane Class",
+        "content": "[edit]"
+      },
+      "Members_2": {
+        "title": "Members",
+        "content": ""
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → COMP : Get or set the component this pane points to."
+      },
+      "id": {
+        "title": "",
+        "content": "id → int (Read Only): A unique numeric identifier."
+      },
+      "link": {
+        "title": "",
+        "content": "link → int : Get or set the numeric link index."
+      },
+      "enable": {
+        "title": "",
+        "content": "enable → bool : Get or set mouse and keyboard interactivity on the pane."
+      },
+      "maximize": {
+        "title": "",
+        "content": "maximize → bool : Enable or disable the pane maximize state."
+      },
+      "name": {
+        "title": "",
+        "content": "name → str : Get or set the pane name."
+      },
+      "ratio": {
+        "title": "",
+        "content": "ratio → float : Get or set the split proportion of the pane, if the pane was previously split."
+      },
+      "bottomLeft": {
+        "title": "",
+        "content": "bottomLeft → Coords (Read Only): The coordinates of the bottom left corner, expressed as both x/y and u/v in a named tuple."
+      },
+      "topRight": {
+        "title": "",
+        "content": "topRight → Coords (Read Only): The coordinates of the top right corner, expressed as both x/y and u/v in a named tuple."
+      },
+      "type": {
+        "title": "",
+        "content": "type → PaneType (Read Only): The enumerated type of the pane. Example: NetworkEditor.\nThe enumeration is called PaneType and consists of:\n\nPaneType.NETWORKEDITOR\nPaneType.PANEL\nPaneType.GEOMETRYVIEWER\nPaneType.TOPVIEWER\nPaneType.CHOPVIEWER\nPaneType.ANIMATIONEDITOR\nPaneType.PARAMETERS\nPaneType.TEXTPORT"
+      },
+      "Methods_2": {
+        "title": "Methods",
+        "content": ""
+      },
+      "changeType": {
+        "title": "",
+        "content": "changeType(paneType)→ td.Pane: Change the pane to the specified type.  Will return a new Pane object that represents the Pane. After being called, the current Pane instance will no longer be valid.\npaneType - The type of pane to change this pane to.p = ui.panes[0]\np = p.changeType(PaneType.TOPVIEWER)  # note: must re-assign p to new object."
+      },
+      "close": {
+        "title": "",
+        "content": "close()→ None: Close the pane."
+      },
+      "floatingCopy": {
+        "title": "",
+        "content": "floatingCopy()→ td.Pane: Return a floating copy of the pane."
+      },
+      "splitBottom": {
+        "title": "",
+        "content": "splitBottom()→ td.Pane: Split the bottom portion of the pane into a new pane."
+      },
+      "splitLeft": {
+        "title": "",
+        "content": "splitLeft()→ td.Pane: Split the left portion of the pane into a new pane."
+      },
+      "splitRight": {
+        "title": "",
+        "content": "splitRight()→ td.Pane: Split the right portion of the pane into a new pane."
+      },
+      "splitTop": {
+        "title": "",
+        "content": "splitTop()→ td.Pane: Split the top portion of the pane into a new pane."
+      },
+      "tearAway": {
+        "title": "",
+        "content": "tearAway()→ bool: Detach the pane into a floating window. Returns True if successful. TouchDesigner Build: Latest\\n2021.100002018.28070before 2018.28070"
+      }
+    }
+  }
+}

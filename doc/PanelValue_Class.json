@@ -1,0 +1,37 @@
+{
+  "className": "PanelValue_Class",
+  "url": "https://docs.derivative.ca/PanelValue_Class",
+  "content": {
+    "title": "PanelValue Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "name": {
+        "title": "",
+        "content": "name → str (Read Only): The name of the panel value. See Panel Value for the list of possible names. name is a string."
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "val": {
+        "title": "",
+        "content": "val → Any : Get or set the panel value."
+      },
+      "valid": {
+        "title": "",
+        "content": "valid → bool (Read Only): True if the referenced panel value currently exists, False if it has been deleted."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "Casting_to_a_Value": {
+        "title": "Casting to a Value",
+        "content": "[edit] The PanelValue Class implements all necessary methods to be treated as a number or string, which in this case gets or sets its value. Therefore, an explicit call to eval() or set() is unnecessary when used in a parameter, or in a numeric expression.\nFor example, the following are equivalent in a parameter: (float)parent().panel.u\nparent().panel.u.val\nparent().panel.u\n\n# the following are also equivalent\nparent().panel.u.val + 1\nparent().panel.u + 1\n\n# as are the following\nparent().panel.u.val = 0.5\nparent().panel.u = 0.5 TouchDesigner Build: Latest\\nwikieditor2021.100002018.28070before 2018.28070"
+      }
+    }
+  }
+}

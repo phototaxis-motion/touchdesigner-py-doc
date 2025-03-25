@@ -1,0 +1,33 @@
+{
+  "className": "DongleList_Class",
+  "url": "https://docs.derivative.ca/DongleList_Class",
+  "content": {
+    "title": "DongleList Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "refreshDongles": {
+        "title": "",
+        "content": "refreshDongles()→ None: Refreshes the list of dongles connected to the system and their product codes."
+      },
+      "encrypt": {
+        "title": "",
+        "content": "encrypt(firmCode, productCode, data)→ ByteArray: Encrypts a string or byte array using a CodeMeter dongle with a given firm code and product code installed on it. If successful it returns a byte array with the encrypted data.\nfirmCode - The firm code to use. It must be present on the dongle.\nproductCode - The product code to use. It must be present on the dongle.\ndata - A string or byte array to encrypt. Must be 16 bytes in size at least."
+      },
+      "decrypt": {
+        "title": "",
+        "content": "decrypt(firmCode, productCode, data)→ ByteArray: Decrypts a string or byte array using a CodeMeter dongle with a given firm code and product code installed on it. If successful it returns a byte array with the decrypted data.\nfirmCode - The firm code to use. It must be present on the dongle.\nproductCode - The product code to use. It must be present on the dongle.\ndata - A string or byte array to decrypt. Must be 16 bytes in size at least."
+      },
+      "productCodeInstalled": {
+        "title": "",
+        "content": "productCodeInstalled()→ bool: Returns True if the provided product code is installed on any of the connected dongles. TouchDesigner Build: \nLatest\\n2022.24140\n2021.10000\n2018.28070\nbefore 2018.28070 Retrieved from \"https://docs.derivative.ca/index.php?title=DongleList_Class&oldid=26976\""
+      }
+    }
+  }
+}

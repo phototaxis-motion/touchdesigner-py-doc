@@ -1,0 +1,73 @@
+{
+  "className": "Camera_Class",
+  "url": "https://docs.derivative.ca/Camera_Class",
+  "content": {
+    "title": "Camera Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "dir": {
+        "title": "",
+        "content": "dir → tdu.Position : Get or set the direction of the camera as a vector that points towards the target. Up is considered to be (0,1,0)."
+      },
+      "pivot": {
+        "title": "",
+        "content": "pivot → tdu.Position : Get or set the 3D point in space where the camera will pivot around or towards."
+      },
+      "position": {
+        "title": "",
+        "content": "position → tdu.Position : Get or set the 3D point in space where the camera is located."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "blendCamera": {
+        "title": "",
+        "content": "blendCamera(targetCamera, blendFactor)→ tdu.Camera: Returns a camera that is blended with the given camera using the blendFactor. The camera position is blended using linear interpolation, while the rotation is blended using spherical linear interpolation.\ntargetCamera - A second camera that is the blend target.\nblendfactor - A blend value between 0 and 1.\""
+      },
+      "dolly": {
+        "title": "",
+        "content": "dolly()→ None: Move the camera away or towards the pivot point."
+      },
+      "frameBounds": {
+        "title": "",
+        "content": "frameBounds()→ OrthoWidth: Set the camera to frame the given bounding box. Returns the width of the framed scene that can be used when setting up orthographic projections."
+      },
+      "look": {
+        "title": "",
+        "content": "look()→ None: Pivot the camera around its position."
+      },
+      "move3D": {
+        "title": "",
+        "content": "move3D()→ None: Move the camera using data from a 3D mouse."
+      },
+      "pan": {
+        "title": "",
+        "content": "pan()→ None: Pan the camera in a 2D plane facing the pivot point."
+      },
+      "setTransform": {
+        "title": "",
+        "content": "setTransform()→ None: Set the camera view matrix."
+      },
+      "track": {
+        "title": "",
+        "content": "track()→ None: Move the camera up/down in the Y-Axis or left/right."
+      },
+      "transform": {
+        "title": "",
+        "content": "transform()→ None: Get the camera view matrix."
+      },
+      "tumble": {
+        "title": "",
+        "content": "tumble()→ None: Rotate the camera around the pivot point."
+      },
+      "walk": {
+        "title": "",
+        "content": "walk()→ None: Move the camera forward/back along in the ZX plane and rotate around its position. TouchDesigner Build: \nLatest\\nwikieditor\n2022.24140\n2021.10000\nbefore 2021.10000 Retrieved from \"https://docs.derivative.ca/index.php?title=Camera_Class&oldid=31210\""
+      }
+    }
+  }
+}

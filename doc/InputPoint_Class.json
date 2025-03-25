@@ -1,0 +1,29 @@
+{
+  "className": "InputPoint_Class",
+  "url": "https://docs.derivative.ca/InputPoint_Class",
+  "content": {
+    "title": "InputPoint Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "color": {
+        "title": "",
+        "content": "color → TDU.Color (Read Only): The color for this point. This is different from the Cd attribute, since it can come from a Vertex if there is no color on the inputPoint itself."
+      },
+      "normal": {
+        "title": "",
+        "content": "normal → TDU.Vector (Read Only): The normal for this point. This is different from the N attribute, since it can come from a Vertex or from the destination point, if there is no normal on the inputPoint itself."
+      },
+      "sopCenter": {
+        "title": "",
+        "content": "sopCenter → TDU.Position (Read Only): Get the barycentric coordinate of the geometry the inputPoint is a part of. This is faster than other methods to get the center of a SOP's geometry due to internal optimizations. It is expressed as a tdu.Position."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "className": "AbsTime_Class",
+  "url": "https://docs.derivative.ca/AbsTime_Class",
+  "content": {
+    "title": "absTime Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "frame": {
+        "title": "",
+        "content": "frame → float (Read Only): Absolute total number of frames played since the application started.  Paused only with the power On/Off or with power()\nExample: absTime.frame\nExample: tdu.rand(absTime.frame + .1) # a unique random number that is consistent across all nodes, changing every frame"
+      },
+      "seconds": {
+        "title": "",
+        "content": "seconds → float (Read Only): Absolute total seconds played since the application started. Paused only with the power On/Off or with power()."
+      },
+      "step": {
+        "title": "",
+        "content": "step → float (Read Only): Number of absolute frames elapsed between start of previous and current frame. When this value is greater than 1, the system is dropping frames."
+      },
+      "stepSeconds": {
+        "title": "",
+        "content": "stepSeconds → float (Read Only): Absolute time elapsed between start of previous and current frame."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      }
+    }
+  }
+}

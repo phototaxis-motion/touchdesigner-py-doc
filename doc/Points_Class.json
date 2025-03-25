@@ -1,0 +1,37 @@
+{
+  "className": "Points_Class",
+  "url": "https://docs.derivative.ca/Points_Class",
+  "content": {
+    "title": "Points Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "Special_Functions": {
+        "title": "Special Functions",
+        "content": "[edit]"
+      },
+      "len": {
+        "title": "",
+        "content": "len(Points)→ int: Returns the total number of points.\na = len(op('box1').points)"
+      },
+      "[]": {
+        "title": "",
+        "content": "[index]→ td.Point: Get a specific point given an integer index.\nn = op('box1').points[0]"
+      },
+      "Iterator": {
+        "title": "",
+        "content": "Iterator→ td.Point: Iterate over each point.\nfor m in op('box1').points:\n\t# do something with m, which is a Point TouchDesigner Build: Latest\\n2021.100002018.28070before 2018.28070"
+      }
+    }
+  }
+}

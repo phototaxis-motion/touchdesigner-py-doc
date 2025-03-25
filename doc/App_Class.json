@@ -1,0 +1,145 @@
+{
+  "className": "App_Class",
+  "url": "https://docs.derivative.ca/App_Class",
+  "content": {
+    "title": "App Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "applicationsFolder": {
+        "title": "",
+        "content": "applicationsFolder → str (Read Only): The primary location for installing applications on the system eg. 'C:/Program Files' on Windows."
+      },
+      "architecture": {
+        "title": "",
+        "content": "architecture → str (Read Only): The architecture of the compile.  Generally 32 or 64 bit."
+      },
+      "binFolder": {
+        "title": "",
+        "content": "binFolder → str (Read Only): Installation folder containing the binaries."
+      },
+      "build": {
+        "title": "",
+        "content": "build → str (Read Only): Application build number."
+      },
+      "compileDate": {
+        "title": "",
+        "content": "compileDate → Tuple[int, int, int] (Read Only): The date the application was compiled, expressed as a tuple (year, month, day)."
+      },
+      "configFolder": {
+        "title": "",
+        "content": "configFolder → str (Read Only): Installation folder containing configuration files."
+      },
+      "desktopFolder": {
+        "title": "",
+        "content": "desktopFolder → str (Read Only): Current user's desktop folder."
+      },
+      "enableCachedParameters": {
+        "title": "",
+        "content": "enableCachedParameters → bool : Get or set caching parameter values instead of always evaluating."
+      },
+      "enableOptimizedExprs": {
+        "title": "",
+        "content": "enableOptimizedExprs → bool : Get or set if Python expression optimization is enabled. Defaults to True every time TouchDesigner starts."
+      },
+      "experimental": {
+        "title": "",
+        "content": "experimental → bool (Read Only): Returns true if the App is an experimental build, false otherwise."
+      },
+      "installFolder": {
+        "title": "",
+        "content": "installFolder → str (Read Only): Main installation folder."
+      },
+      "launchTime": {
+        "title": "",
+        "content": "launchTime → float (Read Only): Total time required to launch and begin playing the toe file, measured in seconds."
+      },
+      "logExtensionCompiles": {
+        "title": "",
+        "content": "logExtensionCompiles → bool : Get or set if extra messages for starting and ending compiling extensions is sent to the textport. Additional error stack will be printed if compilation fails.  Defaults to False every time TouchDesigner starts."
+      },
+      "osName": {
+        "title": "",
+        "content": "osName → str (Read Only): The operating system name."
+      },
+      "osVersion": {
+        "title": "",
+        "content": "osVersion → str (Read Only): The operating system version."
+      },
+      "power": {
+        "title": "",
+        "content": "power → bool : Get or set the overall processing state of the process. When True, processing is enabled.  When False processing is halted. This is identical to pressing the power button on the main interface. This has a greater effect than simply pausing or stopping the playbar.\napp.power = False #turn off the power button."
+      },
+      "preferencesFolder": {
+        "title": "",
+        "content": "preferencesFolder → str (Read Only): Folder where the preferences file is located."
+      },
+      "processId": {
+        "title": "",
+        "content": "processId → int (Read Only): The ID of the current running process."
+      },
+      "product": {
+        "title": "",
+        "content": "product → str (Read Only): Type of executable the project is running under. Values are 'TouchDesigner', 'TouchPlayer' or 'TouchEngine'."
+      },
+      "pythonExecutable": {
+        "title": "",
+        "content": "pythonExecutable → str (Read Only): Path to TouchDesigner's Python executable. This executable is not used directly by TouchDesigner but can be used to test pure Python code in an environment with all the packages and modules included with TouchDesigner. The executable can also be used to run external Python scripts without installing a separate Python installation."
+      },
+      "recentFiles": {
+        "title": "",
+        "content": "recentFiles → list : Get or set the list of most recently saved or loaded files."
+      },
+      "samplesFolder": {
+        "title": "",
+        "content": "samplesFolder → str (Read Only): Installation folder containing configuration files."
+      },
+      "paletteFolder": {
+        "title": "",
+        "content": "paletteFolder → str (Read Only): Installation folder containing palette files."
+      },
+      "userPaletteFolder": {
+        "title": "",
+        "content": "userPaletteFolder → str (Read Only): Folder where custom user palettes are located."
+      },
+      "version": {
+        "title": "",
+        "content": "version → str (Read Only): Application version number."
+      },
+      "windowColorBits": {
+        "title": "",
+        "content": "windowColorBits → int (Read Only): The number of color bits per color channel the TouchDesigner window is running at. By default this will be 8-bits per channel, but can be increased to 10-bits by settings env var TOUCH_10_BIT_COLOR=1. Only works on displays that support 10-bit color."
+      },
+      "systemFolder": {
+        "title": "",
+        "content": "systemFolder → str (Read Only): Installation folder containing system files."
+      },
+      "tempFolder": {
+        "title": "",
+        "content": "tempFolder → str (Read Only): Folder used for temporary files."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "addNonCommercialLimit": {
+        "title": "",
+        "content": "addNonCommercialLimit(password=None)→ None: Limits the application to operate at non-commercial license level. Multiple calls can be made, but each can be undone with a  matching removeNonCommercialLimit(password).  If the password is blank the operation cannot be undone. (See also licenses.disablePro) member.\npassword - (Keyword, Optional) Password to later remove the restriction.app.addNonCommercialLimit(password='secret123')  #undoable with password\napp.addNonCommercialLimit()  #permanent during length of session."
+      },
+      "removeNonCommercialLimit": {
+        "title": "",
+        "content": "removeNonCommercialLimit(password=None)→ bool: Removes the restriction previously added. Returns True if successful.\npassword - (Keyword) Password previously used when restriction added.app.removeNonCommercialLimit(password='secret123')"
+      },
+      "addResolutionLimit": {
+        "title": "",
+        "content": "addResolutionLimit(x, y, password=None)→ None: Limits all textures to the specified amount. Multiple calls can be made, but each can be undone with a  matching removeResolutionLimit(password).  The final resolution limit will be the minimum of all calls. If the password is blank the operation cannot be undone.\nx - Width of maximum texture resolution, measured in pixels.\ny - Height of maximum texture resolution, measured in pixels.\npassword - (Keyword, Optional) Password to later remove the restriction.app.addResolutionLimit(600, 480, password='secret123')  #undoable with password\napp.addResolutionLimit()  #permanent during length of session."
+      },
+      "removeResolutionLimit": {
+        "title": "",
+        "content": "removeResolutionLimit(password=None)→ bool: Removes the restriction previously added. Returns True if successful.\npassword - (Keyword) Password previously used when restriction added.app.removeResolutionLimit(password='secret123') TouchDesigner Build: Latest\\nwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditor2022.241402021.100002020.200002018.28070before 2018.28070"
+      }
+    }
+  }
+}

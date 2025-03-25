@@ -1,0 +1,53 @@
+{
+  "className": "Monitors_Class",
+  "url": "https://docs.derivative.ca/Monitors_Class",
+  "content": {
+    "title": "Monitors Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "primary": {
+        "title": "",
+        "content": "primary → int (Read Only): The primary monitor display."
+      },
+      "width": {
+        "title": "",
+        "content": "width → int (Read Only): The width of the combined monitor area, measured in pixels."
+      },
+      "height": {
+        "title": "",
+        "content": "height → int (Read Only): The height of the combined monitor area, measured in pixels."
+      },
+      "left": {
+        "title": "",
+        "content": "left → int (Read Only): The leftmost edge of the combined monitor area, measured in pixels."
+      },
+      "right": {
+        "title": "",
+        "content": "right → int (Read Only): The rightmost edge of the combined monitor area, measured in pixels."
+      },
+      "top": {
+        "title": "",
+        "content": "top → int (Read Only): The topmost position of the combined monitor area, measured in pixels."
+      },
+      "bottom": {
+        "title": "",
+        "content": "bottom → int (Read Only): The bottommost position of the combined monitor area, measured in pixels."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "locate": {
+        "title": "",
+        "content": "locate(x,y)→ td.Monitor: Return the monitor at the specified mouse coordinates, or None."
+      },
+      "refresh": {
+        "title": "",
+        "content": "refresh()→ None: Causes the application to behave as if a monitor device has changed. Monitors DAT and other sources will be updated. This is typically done automatically by the operating system, but in special cases can be triggered manually with this method. TouchDesigner Build: \nLatest\\n2021.10000\n2018.28070\nbefore 2018.28070 Retrieved from \"https://docs.derivative.ca/index.php?title=Monitors_Class&oldid=26982\""
+      }
+    }
+  }
+}

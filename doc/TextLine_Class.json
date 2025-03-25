@@ -1,0 +1,37 @@
+{
+  "className": "TextLine_Class",
+  "url": "https://docs.derivative.ca/TextLine_Class",
+  "content": {
+    "title": "TextLine Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "glyph": {
+        "title": "",
+        "content": "glyph → int (Read Only): The index of the glyph that represents this text line."
+      },
+      "fontIndex": {
+        "title": "",
+        "content": "fontIndex → int (Read Only): The index of the font that the glyph belongs to. Glyphs are not interchangable between fonts."
+      },
+      "text": {
+        "title": "",
+        "content": "text → str (Read Only): The text for this line."
+      },
+      "origin": {
+        "title": "",
+        "content": "origin → tdu.Position (Read Only): A tdu.Position object that gives the baseline origin of the line of text."
+      },
+      "lineWidth": {
+        "title": "",
+        "content": "lineWidth → float (Read Only): The width of the format box of this line of text. This member is not used by the Geo Text COMP."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      }
+    }
+  }
+}

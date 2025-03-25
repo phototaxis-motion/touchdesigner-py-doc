@@ -1,0 +1,37 @@
+{
+  "className": "Options_Class",
+  "url": "https://docs.derivative.ca/Options_Class",
+  "content": {
+    "title": "Options Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "resetToDefaults": {
+        "title": "",
+        "content": "resetToDefaults()→ None: Reset all options to their default values."
+      },
+      "Special_Functions": {
+        "title": "Special Functions",
+        "content": "[edit]"
+      },
+      "len": {
+        "title": "",
+        "content": "len(Options)→ int: Returns the total number of options.\na = len(ui.options)"
+      },
+      "[]": {
+        "title": "",
+        "content": "[<option name>]→ value: Get or set specific option given an option name key.\nv = ui.options['DAT.width']\nui.options['DAT.width'] = 50"
+      },
+      "iterator": {
+        "title": "",
+        "content": "Iterator→ str: Iterate over each option name.\nfor n in ui.options:\n\tprint(n) # print the name of all options TouchDesigner Build: Latest\\n2021.100002018.28070before 2018.28070"
+      }
+    }
+  }
+}

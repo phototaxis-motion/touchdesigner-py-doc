@@ -1,0 +1,41 @@
+{
+  "className": "Group_Class",
+  "url": "https://docs.derivative.ca/Group_Class",
+  "content": {
+    "title": "Group Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "default": {
+        "title": "",
+        "content": "default → tuple (Read Only): The default values associated with this Group. It returns a tuple item of group points."
+      },
+      "name": {
+        "title": "",
+        "content": "name → str : Set/gets the group name."
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): Gets the owner of this group."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "add": {
+        "title": "",
+        "content": "add(item : Point | Prim | int)→ None: Adds a point/primitive to this group. The point or primitive to be added can be specified by a point, primitive object or the index of a point or primitive object."
+      },
+      "discard": {
+        "title": "",
+        "content": "discard(item : Point | Prim | int)→ None: Removes a point/primitive from this group. The point or primitive to be removed can be specified by a point, primitive object or the index of a point or primitive object."
+      },
+      "destroy": {
+        "title": "",
+        "content": "destroy()→ None: Destroys the current point/primitive group. TouchDesigner Build: Latest\\nwikieditorwikieditor2021.10000before 2021.10000"
+      }
+    }
+  }
+}

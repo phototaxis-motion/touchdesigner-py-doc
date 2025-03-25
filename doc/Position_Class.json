@@ -1,0 +1,45 @@
+{
+  "className": "Position_Class",
+  "url": "https://docs.derivative.ca/Position_Class",
+  "content": {
+    "title": "Position Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "x": {
+        "title": "",
+        "content": "x → float : Gets or sets the X component of the position."
+      },
+      "y": {
+        "title": "",
+        "content": "y → float : Gets or sets the Y component of the position."
+      },
+      "z": {
+        "title": "",
+        "content": "z → float : Gets or sets the Z component of the position."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "translate": {
+        "title": "",
+        "content": "translate(x, y, z)→ None: Translates the position by the specified values.\nx, y, z - The values to translate by.p.translate(5, 2, 0)"
+      },
+      "scale": {
+        "title": "",
+        "content": "scale(x, y, z)→ None: Scales each component of the position by the specified values.\nx, y, z - The values to scale each component of the position by.p.scale(1, 2, 1)"
+      },
+      "copy": {
+        "title": "",
+        "content": "copy()→ tdu.Position: Returns a new position that is a copy of the position.\nnewV = v.copy()"
+      },
+      "Special_Functions": {
+        "title": "Special Functions",
+        "content": "[edit] tdu.Position[i]→ float: Gets or sets the component of the position specified by i, where i can be 0, 1, or 2.\ny = p[1]\np[1] = y + 2.0 tdu.Position * float→ tdu.Position: Scales the position by the give float scalar and returns a new Position as the result.\np = p * 0.1\np = 0.1 * p tdu.Position + float→ tdu.Position: Adds the given scalar to all 3 components of the position and returns a new position as the result.\np = p + 1.2\np = 1.2 + p tdu.Position - float→ tdu.Position: Subtracts the given scalar from all 3 components of the position and returns a new position as the result.\np = p - 1.2\np = 1.2 - p tdu.Vector + tdu.Position→ tdu.Position: Adds the vector to the position. ie. it displaces the given position by the vector. Returns a new position as the result.\np2 = v + p1\np2 = p1 + v tdu.Position - tdu.Vector→ tdu.Position: Subtracts the vector from the position. Notice that the reverse is not a legal operation: subtracting a position from a vector does not have any meaning. Returns a new position with the results.\np2 = p1 - v tdu.Position - tdu.Position→ tdu.Vector: Subtracts the two positions to create a vector that is pointing from the 2nd one to the 1st one, with length equal to the distance between the positions.\nv = p1 - p2 tdu.Position += float→ None: Adds the given scalar to all 3 components of the position, the position will contain the result of the operation.\np += 0.1 tdu.Position += tdu.Vector→ None: Displaces the position by the given vector, the position will contain the result of the operation.\np += v tdu.Position -= float→ None: Subtracts the given scalar from all 3 components of the position, the position will contain the result of the operation.\np -= 0.4 tdu.Position -= tdu.Vector→ None: Displaces the position by the given vector, the position will contain the result of the operation.\np -= v tdu.Matrix * tdu.Position→ tdu.Position: Multiplies the Position by the matrix and returns the a new position as the result.\np2 = m * p1 tdu.Position / float→ tdu.Position: Divides each component of the position by the scalar and returns the a new position as the result.\np2 = p1 / 2.0 tdu.Position *= tdu.Matrix→ None: Multiplies the position by the matrix, the position will contain the result. The is position multiplied on the right of the matrix. It is the equivalent of doing Position = Matrix * Position.\np *= m tdu.Position *= float→ None: Scales all 3 components of the position by the given scalar. The position will contain the result.\np *= 1.3 tdu.Position *= tdu.Position→ None: Component-wise multiplies the 3 components of the first position by the 3 components of the 2nd position.\np1 *= p2 abs(tdu.Position)→ tdu.Position: Returns a new position with all 3 components being the absolute value of the given position's components.\np2 = abs(p1) -tdu.Position→ tdu.Position: Returns a new position with all 3 component's being negated.\np2 = -p1 TouchDesigner Build: Latest\\n2021.100002018.28070before 2018.28070"
+      }
+    }
+  }
+}

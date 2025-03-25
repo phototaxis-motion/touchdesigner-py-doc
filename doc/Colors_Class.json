@@ -1,0 +1,37 @@
+{
+  "className": "Colors_Class",
+  "url": "https://docs.derivative.ca/Colors_Class",
+  "content": {
+    "title": "Colors Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "resetToDefaults": {
+        "title": "",
+        "content": "resetToDefaults()→ None: Set the colors to their default values."
+      },
+      "Special_Functions": {
+        "title": "Special Functions",
+        "content": ""
+      },
+      "len": {
+        "title": "",
+        "content": "len(Colors)→ int: Returns the total color options.\na = len(ui.colors)"
+      },
+      "[]": {
+        "title": "",
+        "content": "[<color option name>]→ triplet(r,g,b): Get or set specific color option, given a string key.\nn = ui.colors['default.bg']\nui.colors['default.bg'] = (1,0,0)"
+      },
+      "iterator": {
+        "title": "",
+        "content": "Iterator→ str: Iterate over each color option name.\nfor n in ui.colors:\n\tprint(n)\n\tui.colors[n] = myColorsList[n] TouchDesigner Build: \nLatest\\n2022.24140\n2021.10000\n2018.28070\nbefore 2018.28070 Retrieved from \"https://docs.derivative.ca/index.php?title=Colors_Class&oldid=26975\""
+      }
+    }
+  }
+}

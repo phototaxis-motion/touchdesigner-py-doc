@@ -1,0 +1,97 @@
+{
+  "className": "Segment_Class",
+  "url": "https://docs.derivative.ca/Segment_Class",
+  "content": {
+    "title": "Segment Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "beginFrames": {
+        "title": "",
+        "content": "beginFrames → int (Read Only): The beginning point of the segment expressed in frames."
+      },
+      "beginSamples": {
+        "title": "",
+        "content": "beginSamples → int (Read Only): The beginning point of the segment expressed in samples."
+      },
+      "beginSeconds": {
+        "title": "",
+        "content": "beginSeconds → float (Read Only): The beginning point of the segment expressed in seconds."
+      },
+      "custom": {
+        "title": "",
+        "content": "custom → dict (Read Only): dictionary of all the extra column values associated with the segment."
+      },
+      "cycle": {
+        "title": "",
+        "content": "cycle → bool (Read Only): Whether or not the segment will repeat itself."
+      },
+      "cycleEndAlertFrames": {
+        "title": "",
+        "content": "cycleEndAlertFrames → int (Read Only): The amount of time before cycling the callback will be executed, expressed in frames."
+      },
+      "cycleEndAlertSamples": {
+        "title": "",
+        "content": "cycleEndAlertSamples → int (Read Only): The amount of time before cycling the callback will be executed, expressed in samples."
+      },
+      "cycleEndAlertSeconds": {
+        "title": "",
+        "content": "cycleEndAlertSeconds → float (Read Only): The amount of time before cycling the callback will be executed, expressed in seconds."
+      },
+      "cycleLimit": {
+        "title": "",
+        "content": "cycleLimit → bool (Read Only): Whether or not the segment will repeat itself indefinitely."
+      },
+      "delayFrames": {
+        "title": "",
+        "content": "delayFrames → int (Read Only): The delay portion of the segment expressed in frames."
+      },
+      "delaySamples": {
+        "title": "",
+        "content": "delaySamples → int (Read Only): The delay portion of the segment expressed in samples."
+      },
+      "delaySeconds": {
+        "title": "",
+        "content": "delaySeconds → float (Read Only): The delay portion of the segment expressed in seconds."
+      },
+      "lengthFrames": {
+        "title": "",
+        "content": "lengthFrames → int (Read Only): The length portion of the segment expressed in frames."
+      },
+      "lengthSamples": {
+        "title": "",
+        "content": "lengthSamples → int (Read Only): The length portion of the segment expressed in samples."
+      },
+      "lengthSeconds": {
+        "title": "",
+        "content": "lengthSeconds → float (Read Only): The length portion of the segment expressed in seconds."
+      },
+      "maxCycles": {
+        "title": "",
+        "content": "maxCycles → int (Read Only): The maximum number of repetitions."
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "row": {
+        "title": "",
+        "content": "row → int (Read Only): Named tuple of all the parameter or column values describing the segment."
+      },
+      "speed": {
+        "title": "",
+        "content": "speed → float (Read Only): The speed multiplier of the segment."
+      },
+      "index": {
+        "title": "",
+        "content": "index → int (Read Only): The numeric index of this segment."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      }
+    }
+  }
+}

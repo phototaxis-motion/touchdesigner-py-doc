@@ -1,0 +1,333 @@
+{
+  "className": "Par_Class",
+  "url": "https://docs.derivative.ca/Par_Class",
+  "content": {
+    "title": "Par Class",
+    "items": {
+      "toc": {
+        "title": "Contents\n1 Members\n1.1 Type Members\n1.2 Menu Parameters\n\n2 Methods\n2.1 Casting to a Value",
+        "content": ""
+      },
+      "toctogglecheckbox": {
+        "title": "",
+        "content": "Contents 1 Members\n1.1 Type Members\n1.2 Menu Parameters\n\n2 Methods\n2.1 Casting to a Value"
+      },
+      "mw-toc-heading": {
+        "title": "Contents",
+        "content": "1 Members\n1.1 Type Members\n1.2 Menu Parameters\n\n2 Methods\n2.1 Casting to a Value"
+      },
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "val": {
+        "title": "",
+        "content": "val → Any : Get or set the constant mode value of the parameter only. Important: To get the parameter's current working value, regardless of the Parameter Mode (constant, expression, export or bound), always use the eval() method described below.\nop('geo1').par.tx.val   # the constant value \nop('geo1').par.tx.eval()   # the evaluated parameter\nop('geo1').par.tx.val = 5\nop('geo1').par.tx = 5  # equivalent to above, more concise form\nop('parexec1').par.op = [parent(), parent(2)] # you can assign a list of ops to a parameter that allows multiple operators\n\nWhen setting this member, the parameter will also be placed in constant mode.  See mode member below.\n\nTo set a menu value by its index, use the menuIndex member as described below."
+      },
+      "expr": {
+        "title": "",
+        "content": "expr → str : Get or set the non-evaluated expression only. To get the parameter's current value, regardless of the Parameter Mode (constant, expression, export or bound), use the eval() method described below.\nop('geo1').par.tx.expr = 'absTime.frame'  #set to match current frame\n\nWhen setting this member, the parameter will also be placed in expression mode. See mode member below.\n\nNOTE: For convenience, the expression is placed in double-quotes so you can safely put in expressions containing single quotes. 'a' and \"a\" have the same effect of enclosing strings in python."
+      },
+      "enableExpr": {
+        "title": "",
+        "content": "enableExpr → str : Get or set an expression that controls the enable state for this parameter.\np.enableExpr = \"me.par.X.menuIndex == 5\"\n# Note the outside quotes, as this is an expression, not an object."
+      },
+      "exportOP": {
+        "title": "",
+        "content": "exportOP → OP (Read Only): The operator exporting to this parameter."
+      },
+      "exportSource": {
+        "title": "",
+        "content": "exportSource → Channel (Read Only): The object exporting to this parameter. Examples: Cell, Channel or None."
+      },
+      "bindExpr": {
+        "title": "",
+        "content": "bindExpr → str : Get or set an expression that returns a bindable object. This can be used to bind this parameter's constant value to the referenced object's value.\np.bindExpr = \"op('geo1').par.tx\"\n  \nNote the outside quotes, as bindExpr is an expression, not an object."
+      },
+      "bindMaster": {
+        "title": "",
+        "content": "bindMaster → OP (Read Only): The object to which this parameter is bound to, possibly None."
+      },
+      "bindReferences": {
+        "title": "",
+        "content": "bindReferences → list (Read Only): The (possibly empty) list of objects which bind to this parameter."
+      },
+      "bindRange": {
+        "title": "",
+        "content": "bindRange → bool : Get or set parameter's range binding state. If True, min, max, clampMin, clampMax, normMin, normMax, normVal values will be based on master bind parameter. Can only be set on Custom Parameters."
+      },
+      "hidden": {
+        "title": "",
+        "content": "hidden → bool (Read Only): Get the parameter's hidden status. When True the parameter is considered obsolete or irrelevant and should not be modified. They are not shown in the dialog but only maintained for backward compatibility."
+      },
+      "index": {
+        "title": "",
+        "content": "index → int (Read Only): A unique identifier for the parameter.  May change in the case of custom parameters."
+      },
+      "vecIndex": {
+        "title": "",
+        "content": "vecIndex → int (Read Only): The parameter's vector index. For example, op('geo1').par.tz would have a value of 2."
+      },
+      "name": {
+        "title": "",
+        "content": "name → str : Get or set the parameter's unique name.\nop('myOperator').par.Custompar.name = 'Translate'\n\nCan only be set on Custom Parameters."
+      },
+      "label": {
+        "title": "",
+        "content": "label → str : Get or set the parameter's label.\nop('myOperator').par.Custompar.label = 'Translate'\n\nCan only be set on Custom Parameters."
+      },
+      "subLabel": {
+        "title": "",
+        "content": "subLabel → str (Read Only): Returns the name of the sub-label."
+      },
+      "startSection": {
+        "title": "",
+        "content": "startSection → bool : Get or set the parameter's separator status. When True a visible separator is drawn between this parameter and the ones preceding it. Can only be set on Custom Parameters."
+      },
+      "readOnly": {
+        "title": "",
+        "content": "readOnly → bool : Get or set the parameter's read only status. When True the parameter cannot be modified through the UI, only scripting."
+      },
+      "help": {
+        "title": "",
+        "content": "help → str (Read Only): Get or set a custom parameter's help text. To see any parameter's help, rollover the parameter while holding the Alt key. For built-in parameters this can be used to get the parameter's help text."
+      },
+      "parGroup": {
+        "title": "",
+        "content": "parGroup → ParGroup (Read Only): The ParGroup of parameters this parameter belongs to. A ParGroup is a set of parameters sharing one line on a parameter dialog with a common label, example: Translate (x, y, z).."
+      },
+      "min": {
+        "title": "",
+        "content": "min → int : Get or set the parameter's numerical minimum value. The parameter's value will be clamped at that minimum if clampMin = True. Can only be set on Custom Parameters."
+      },
+      "max": {
+        "title": "",
+        "content": "max → int : Get or set the parameter's numerical maximum value. The parameter's value will be clamped at that maximum if clampMax = True. Can only be set on Custom Parameters."
+      },
+      "clampMin": {
+        "title": "",
+        "content": "clampMin → bool : Get or set the parameter's numerical clamping behavior. If set to clampMin = True, the parameter will clamp on the lower end at the value specified in min Can only be set on Custom Parameters."
+      },
+      "clampMax": {
+        "title": "",
+        "content": "clampMax → bool : Get or set the parameter's numerical clamping behavior. If set to clampMax = True, the parameter will clamp on the upper end at the value specified in max Can only be set on Custom Parameters."
+      },
+      "default": {
+        "title": "",
+        "content": "default → Any : Get or set the parameter's default value. Can only be set on Custom Parameters."
+      },
+      "defaultBindExpr": {
+        "title": "",
+        "content": "defaultBindExpr → str : Get or set the parameter's default bind expression. Can only be set on Custom Parameters.\nop('base1').par.Size.defaultBindExpr = 'me.par.tx'"
+      },
+      "defaultExpr": {
+        "title": "",
+        "content": "defaultExpr → str : Get or set the parameter's default expression. Can only be set on Custom Parameters.\n# value defaults to this expression.\nop('base1').par.Size.defaultExpr = 'me.time.frame'"
+      },
+      "defaultMode": {
+        "title": "",
+        "content": "defaultMode → ParMode : Get or set the parameter's default evaluation mode.\nop('geo1').par.tx.defaultMode = ParMode.EXPRESSION\n\nThe mode is one of: ParMode.CONSTANT, ParMode.EXPRESSION, or ParMode.EXPORT, or ParMode.BIND.\n\nSee Parameter_Dialog#Working_with_Parameter_Modes for more information."
+      },
+      "normMin": {
+        "title": "",
+        "content": "normMin → int : Get or set the parameter's minimum slider value if the parameter is a numerical slider. Can only be set on Custom Parameters."
+      },
+      "normMax": {
+        "title": "",
+        "content": "normMax → int : Get or set the parameter's maximum slider value if the parameter is a numerical slider. Can only be set on Custom Parameters."
+      },
+      "normVal": {
+        "title": "",
+        "content": "normVal → float : Get or set the parameter's value as a normalized slider position. Can only be set on Custom Parameters."
+      },
+      "enable": {
+        "title": "",
+        "content": "enable → bool : Get or set the parameter's enable state. Can only be set on Custom Parameters."
+      },
+      "order": {
+        "title": "",
+        "content": "order → float : Get or set the parameter's position on the parameter page.  Can only be set on Custom Parameters."
+      },
+      "page": {
+        "title": "",
+        "content": "page → td.Page : Get or set the parameter page the custom parameter is part of. Can only be set on Custom Parameters."
+      },
+      "password": {
+        "title": "",
+        "content": "password → bool : Get or set the parameter's password mode. When True all text is rendered as asterisks. Can only be set on Custom string, int or float parameters. Custom Parameters."
+      },
+      "mode": {
+        "title": "",
+        "content": "mode → ParMode : Get or set the parameter's evaluation mode.\nop('geo1').par.tx.mode = ParMode.EXPRESSION\n\nThe mode is one of:  ParMode.CONSTANT, ParMode.EXPRESSION, or ParMode.EXPORT, or ParMode.BIND.\n\nSee Parameter_Dialog#Working_with_Parameter_Modes for more information."
+      },
+      "prevMode": {
+        "title": "",
+        "content": "prevMode → ParMode (Read Only): The parameter's previous evaluation mode."
+      },
+      "menuNames": {
+        "title": "",
+        "content": "menuNames → list : Get or set a list of all possible menu choice names. In the case of non menu parameters, None is returned. Can only be set on Custom Parameters."
+      },
+      "menuLabels": {
+        "title": "",
+        "content": "menuLabels → list : Get or set a list of all possible menu choice labels. In the case of non menu parameters, None is returned. Can only be set on Custom Parameters."
+      },
+      "menuIndex": {
+        "title": "",
+        "content": "menuIndex → int : Get or set a menu constant value by its index."
+      },
+      "menuSource": {
+        "title": "",
+        "content": "menuSource → str : Get or set an expression that returns an object with .menuItems .menuNames members.  This can be used to create a custom menu whose entries dynamically follow that of another menu for example. Simple menu sources include another parameter with a menu c, an object created by tdu.TableMenu, or an object created by TDFunctions.parMenu.\np.menuSource = \"op('audiodevin1').par.device\"\n\nNote the outside quotes, as menuSource is an expression, not an object."
+      },
+      "valid": {
+        "title": "",
+        "content": "valid → bool (Read Only): True if the referenced parameter currently exists, False if it has been deleted."
+      },
+      "sequence": {
+        "title": "",
+        "content": "sequence → Sequence | None (Read Only): The Sequence this parameter belongs to. None if not in a sequence."
+      },
+      "sequenceBlock": {
+        "title": "",
+        "content": "sequenceBlock → SequenceBlock | None (Read Only): The SequenceBlock this parameter belongs to. None if not in a sequence."
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "styleCloneImmune": {
+        "title": "",
+        "content": "styleCloneImmune → bool : Get or set the parameter's style clone immunity. When False, the parameter definition is matched to any matching master parameter its operator is cloned to. When True, it is left unchanged."
+      },
+      "lastScriptChange": {
+        "title": "",
+        "content": "lastScriptChange → tuple (Read Only): Return information about when this parameter was last modified by a script. Cleared when the parameter is updated via the UI.\npython >>> op('/level1').par.invert.lastScriptChange\nSetInfo(dat=type:textDAT path:/text1, function='<module>', line=1, frame=300061, timeStamp=1613150878)"
+      },
+      "Type_Members": {
+        "title": "Type Members",
+        "content": "[edit]"
+      },
+      "isDefault": {
+        "title": "",
+        "content": "isDefault → bool (Read Only): True when the parameter value, expression and mode are in their default settings."
+      },
+      "isCustom": {
+        "title": "",
+        "content": "isCustom → bool (Read Only): True for Custom Parameters."
+      },
+      "isPulse": {
+        "title": "",
+        "content": "isPulse → bool (Read Only): True for pulse parameters."
+      },
+      "isMomentary": {
+        "title": "",
+        "content": "isMomentary → bool (Read Only): True for momentary parameters."
+      },
+      "isMenu": {
+        "title": "",
+        "content": "isMenu → bool (Read Only): True for menu parameters."
+      },
+      "isNumber": {
+        "title": "",
+        "content": "isNumber → bool (Read Only): True for numeric parameters."
+      },
+      "isFloat": {
+        "title": "",
+        "content": "isFloat → bool (Read Only): True for floating point numeric parameters."
+      },
+      "isInt": {
+        "title": "",
+        "content": "isInt → bool (Read Only): True for integer numeric parameters."
+      },
+      "isOP": {
+        "title": "",
+        "content": "isOP → bool (Read Only): True for OP parameters."
+      },
+      "isPython": {
+        "title": "",
+        "content": "isPython → bool (Read Only): True for python parameters."
+      },
+      "isSequence": {
+        "title": "",
+        "content": "isSequence → bool (Read Only): True for sequence header parameters."
+      },
+      "isString": {
+        "title": "",
+        "content": "isString → bool (Read Only): True for string parameters."
+      },
+      "isToggle": {
+        "title": "",
+        "content": "isToggle → bool (Read Only): True for toggle parameters."
+      },
+      "style": {
+        "title": "",
+        "content": "style → str (Read Only): Describes the behavior and contents of the custom parameter. Example 'Float', 'Int', 'Pulse', 'XYZ', etc."
+      },
+      "collapser": {
+        "title": "",
+        "content": "collapser → bool (Read Only): Returns True if the parameter is a parent of collapsable parameters (ie. a collapser)."
+      },
+      "collapsable": {
+        "title": "",
+        "content": "collapsable → bool (Read Only): Returns True if the parameter is collapsable."
+      },
+      "Menu_Parameters": {
+        "title": "Menu Parameters",
+        "content": "[edit] Menu parameters can be get or set by specifying either the string value of the menu, or its numeric index. For example, the following are equivalent: op('geo1').par.xord = 'trs'\nop('geo1').par.xord = 5 Alternatively, the menu can be accessed more directly: n = op('geo1')\nn.par.xord.menuIndex = 5  #trs\na = n.menuNames[0]  #returns 'srt'\nb = n.menuLabels[0] #returns 'Scale Rotate Translate'"
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "copy": {
+        "title": "",
+        "content": "copy(Par)→ None: Copy the specified parameter.\nPar - The parameter to copy.op('geo1').par.tx.copy( op('geo2').par.tx )"
+      },
+      "eval": {
+        "title": "",
+        "content": "eval()→ Any: Evaluate a parameter. This value may be derived by the parameter's constant value, expression, export, or bind, dependent on its mode.\na = op('geo1').par.tx.eval()\n\nCalling eval on an OP parameter that can hold multiple OPs will return a single OP if there is only 1 result, a list of OPs if there are more than 1, and None if there are no results."
+      },
+      "evalNorm": {
+        "title": "",
+        "content": "evalNorm()→ float: Similar to eval() but the returns the normalized slider value."
+      },
+      "evalExpression": {
+        "title": "",
+        "content": "evalExpression()→ Any: Evaluate the expression portion of a parameter, if it contains one. This will ignore any exports, etc.\na = op('geo1').par.tx.evalExpression()\n\nNote: the results of evalExpression is always the expression's Python return value, which can be slightly different than Par.eval(). For example, in parameters that hold an operator, .eval() will always return an operator if it exists, even if the expression actually returns a string path. The evalExpression function would return the string path.\n\nTo evaluate an arbitrary expression string, that is not inside a parameter, see OP.evalExpression."
+      },
+      "evalExport": {
+        "title": "",
+        "content": "evalExport()→ Any: Evaluate the export portion of a parameter, if it contains one. This will ignore any expressions, etc.\na = op('geo1').par.tx.evalExport()"
+      },
+      "evalOPs": {
+        "title": "",
+        "content": "evalOPs()→ List[OP]: Evaluate the parameter as series of operators. This is useful for a custom  parameter that specifies a list of operator paths for example.\na = op('base1').par.Paths.evalOPs()"
+      },
+      "evalFile": {
+        "title": "",
+        "content": "evalFile()→ tdu.FileInfo: Evaluate the parameter as a file path. This returns a FileInfo object with the full path. \na = op('moviefilein1').par.file.evalFile()\nprint(a.ext)\nprint(a.baseName)\nprint(a.exists)"
+      },
+      "pulse": {
+        "title": "",
+        "content": "pulse(value=1, frames=0, seconds=0)→ None: Pulsing sets a parameter to the specific value, cooks the operator, then restores the parameter to its previous value.\nFor pulse type parameters no value or time is specified or used.\n\nvalue - (Optional) The value to pulse this parameter with, default is 1.\nframes - (Optional) Number of frames before restoring the parameter to its original value.\nseconds - (Optional) Number of seconds before restoring the parameter to its original value.op('moviein1').par.reload.pulse(1) #set the reload toggle, then cook\nop('glsl1').par.loadvariablenames.pulse() #activate the pulse parameter\nop('geo1').par.ty.pulse(2, frames=120) #pulse geometry ty for 120 frames\nop('text1').par.text.pulse('GO!', seconds=3) #pulse text TOP string field, for 3 seconds\nop('noise').par.type.pulse('random', seconds=0.5) #pulse noise meny type for half a second"
+      },
+      "destroy": {
+        "title": "",
+        "content": "destroy()→ None: Destroy the parameter referenced by this Par. An exception will be raised if the parameter has already been destroyed. Only custom and sequential parameters can be destroyed.  Destroying a sequential parameter will destroy its entire block. Note: When any parameter is destroyed, any existing parameter objects will be invalid and should be re-fetched."
+      },
+      "reset": {
+        "title": "",
+        "content": "reset()→ bool: Resets the parameter to its default state.\nReturns true if anything was changed.\n\nop('geo1').par.tx.reset()"
+      },
+      "isPar": {
+        "title": "",
+        "content": "isPar(par : Par)→ bool: True if the provided Par is the same parameter on the same operator. Because op('container1').par.x == op('container2').par.x compares values and op('container1').par.x is op('container1').par.x is always False (because of TouchDesigner internals), you must use isPar to compare parameter objects.\npar - The parameter to compare identity with."
+      },
+      "Casting_to_a_Value": {
+        "title": "Casting to a Value",
+        "content": "[edit] The Par Class implements all necessary methods to be treated as a number or string, which in this case gets or sets its value. Therefore, an explicit call to eval() or set() is unnecessary when used in a parameter, or in a numeric expression. For example, the following are equivalent in a parameter: (float)me.par.tx\nme.par.tx.eval()\nme.par.tx The following are also equivalent: me.par.tx.eval() + 1\nme.par.tx + 1 As are the following: me.par.tx.val = 3\nme.par.tx = 3 Note: However, you can't use functions belonging to the cast object type without evaluating the parameter: me.par.tx.hex() # doesn't work\nme.par.tx.eval().hex() # works! TouchDesigner Build: Latest\\nwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditorwikieditormw-rollback2023.112802022.241402021.100002020.200002018.28070before 2018.28070"
+      }
+    }
+  }
+}

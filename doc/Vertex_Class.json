@@ -1,0 +1,37 @@
+{
+  "className": "Vertex_Class",
+  "url": "https://docs.derivative.ca/Vertex_Class",
+  "content": {
+    "title": "Vertex Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "index": {
+        "title": "",
+        "content": "index → int (Read Only): The vertex position in its primitive."
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "point": {
+        "title": "",
+        "content": "point → td.Point : Get or set the point to which the vertex refers."
+      },
+      "prim": {
+        "title": "",
+        "content": "prim → td.Prim (Read Only): The prim to which the vertex belongs."
+      },
+      "Attributes": {
+        "title": "Attributes",
+        "content": "[edit] In addition to the above members, all attributes are members as well. For example, if the Vertex contains texture coordinates, they may be accessed with: Vertex.uv See: Attribute Class for more information."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      }
+    }
+  }
+}

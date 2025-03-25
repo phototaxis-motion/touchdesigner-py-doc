@@ -1,0 +1,29 @@
+{
+  "className": "Dongle_Class",
+  "url": "https://docs.derivative.ca/Dongle_Class",
+  "content": {
+    "title": "Dongle Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "serialNumber": {
+        "title": "",
+        "content": "serialNumber → str (Read Only): Dongle Serial Number."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "applyUpdate": {
+        "title": "",
+        "content": "applyUpdate(str)→ None: Takes an update as a string and applies it to the dongle."
+      },
+      "createUpdateContext": {
+        "title": "",
+        "content": "createUpdateContext()→ str: Returns a string which is the remote programming update context for the dongle. TouchDesigner Build: \nLatest\\n2022.24140\n2021.10000\n2018.28070\nbefore 2018.28070 Retrieved from \"https://docs.derivative.ca/index.php?title=Dongle_Class&oldid=12016\""
+      }
+    }
+  }
+}

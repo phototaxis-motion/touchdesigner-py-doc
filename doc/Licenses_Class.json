@@ -1,0 +1,49 @@
+{
+  "className": "Licenses_Class",
+  "url": "https://docs.derivative.ca/Licenses_Class",
+  "content": {
+    "title": "Licenses Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "disablePro": {
+        "title": "",
+        "content": "disablePro → bool : When True, the application will run as though no Pro licenses are available.  This can be used to test compatibility with lesser licenses. (See also: app.addNonCommercialLimit)"
+      },
+      "dongles": {
+        "title": "",
+        "content": "dongles → list (Read Only): Get the list of dongles connected to the system."
+      },
+      "machine": {
+        "title": "",
+        "content": "machine → str (Read Only): The computer machine name."
+      },
+      "systemCode": {
+        "title": "",
+        "content": "systemCode → str (Read Only): The unique computer system code."
+      },
+      "isPro": {
+        "title": "",
+        "content": "isPro → bool (Read Only): When True, the application is running with a Pro license. It is recommended to use this and isNonCommerical over the type method."
+      },
+      "isNonCommercial": {
+        "title": "",
+        "content": "isNonCommercial → bool (Read Only): When True, the application is running with a Non-Commercial license. It is recommended to use this and isPro over the type method."
+      },
+      "type": {
+        "title": "",
+        "content": "type → str (Read Only): The highest ranking license type of all installed licenses, some products being 'Pro', 'Non-Commercial', 'Commercial'. See also app.product in App Class."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "install": {
+        "title": "",
+        "content": "install(key)→ bool: Install a license with the specified key.  Returns True if successful. TouchDesigner Build: \nLatest\\nwikieditor\n2021.10000\n2018.28070\nbefore 2018.28070 Retrieved from \"https://docs.derivative.ca/index.php?title=Licenses_Class&oldid=28353\""
+      }
+    }
+  }
+}

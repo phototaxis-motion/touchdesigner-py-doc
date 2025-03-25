@@ -1,0 +1,49 @@
+{
+  "className": "Preferences_Class",
+  "url": "https://docs.derivative.ca/Preferences_Class",
+  "content": {
+    "title": "Preferences Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "defaults": {
+        "title": "",
+        "content": "defaults → dict (Read Only): A dictionary of preferences with their default values."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "save": {
+        "title": "",
+        "content": "save()→ None: Save preference values to disk.  Unless saved, changes to preferences will be lost, next time application is started."
+      },
+      "resetToDefaults": {
+        "title": "",
+        "content": "resetToDefaults()→ None: Reset all preferences to their default values."
+      },
+      "load": {
+        "title": "",
+        "content": "load()→ None: Restore preference values from disk."
+      },
+      "Special_Functions": {
+        "title": "Special Functions",
+        "content": ""
+      },
+      "len": {
+        "title": "",
+        "content": "len(Preferences)→ int: Returns the total number of preferences.\na = len(ui.preferences)"
+      },
+      "[]": {
+        "title": "",
+        "content": "[<preference name>]→ value: Get or set specific preference given a preference name key.\nv = ui.preferences['dats.autoindent']\nui.preferences['dats.autoindent'] = 0"
+      },
+      "iterator": {
+        "title": "",
+        "content": "Iterator→ str: Iterate over each preference name.\nfor p in ui.preferences:\n\tprint(p) # print the name of all preferences TouchDesigner Build: \nLatest\\n2021.10000\n2018.28070\nbefore 2018.28070 Retrieved from \"https://docs.derivative.ca/index.php?title=Preferences_Class&oldid=26986\""
+      }
+    }
+  }
+}

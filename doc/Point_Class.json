@@ -1,0 +1,53 @@
+{
+  "className": "Point_Class",
+  "url": "https://docs.derivative.ca/Point_Class",
+  "content": {
+    "title": "Point Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "index": {
+        "title": "",
+        "content": "index → int (Read Only): The point index in the list."
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "P": {
+        "title": "",
+        "content": "P → td.AttributeData : The coordinates as AttributeData. Individual components can be read or written with the [] operator.\npoint.P[0] = 5\npoint.P = (1,0,1)"
+      },
+      "x": {
+        "title": "",
+        "content": "x → float : Get or set x coordinate value. This is the same as P[0]."
+      },
+      "y": {
+        "title": "",
+        "content": "y → float : Get or set y coordinate value. This is the same as P[1]."
+      },
+      "z": {
+        "title": "",
+        "content": "z → float : Get or set z coordinate value. This is the same as P[2]."
+      },
+      "normP": {
+        "title": "",
+        "content": "normP → tdu.Position (Read Only): The normalized position of this point within the bounding box of the SOP. Will always be in the range [0,1]. Expressed as tdu.Position object."
+      },
+      "Attributes": {
+        "title": "Attributes",
+        "content": "[edit] In addition to the above members, all attributes are members as well. For example, if the Point contains texture coordinates, they may be accessed with:Point.uv box = op('box1')\nprint(box.N[0], box.N[1], box.N[2])\nprint(box.uv[0], box.uv[1], box.uv[2]) See: Attribute Class for more information."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "destroy": {
+        "title": "",
+        "content": "destroy()→ None: Destroy and remove the actual point this object refers to. This operation is only valid when the primitive belongs to a scriptSOP. Note: after this call, other existing Point objects in this SOP may no longer be valid. TouchDesigner Build: Latest\\n2021.100002020.200002018.28070before 2018.28070"
+      }
+    }
+  }
+}

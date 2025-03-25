@@ -1,0 +1,37 @@
+{
+  "className": "SequenceBlock_Class",
+  "url": "https://docs.derivative.ca/SequenceBlock_Class",
+  "content": {
+    "title": "SequenceBlock Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "index": {
+        "title": "",
+        "content": "index → int (Read Only): The numeric index of the block."
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "par": {
+        "title": "",
+        "content": "par → ParCollection (Read Only): An intermediate parameter collection object, from which a specific sequence parameter can be found.\nNames do not include sequence info prefix.\n\nn.seq.Info.blocks[2].par.Tx # raises exception if not found\n\nn.seq.Info.blocks[2].parGroup['Tx'] #returns None if not found"
+      },
+      "parGroup": {
+        "title": "",
+        "content": "parGroup → ParGroupCollection (Read Only): An intermediate parameter collection object, from which a specific sequence parameter group can be found.\nNames do not include sequence info prefix.\n\nn.seq.Info.blocks[2].par.T # raises exception if not found\n\nn.seq.Info.blocks[2].parGroup['T'] #returns None if not found"
+      },
+      "sequence": {
+        "title": "",
+        "content": "sequence → Sequence (Read Only): The sequence object this block belongs to."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      }
+    }
+  }
+}

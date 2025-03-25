@@ -1,0 +1,21 @@
+{
+  "className": "SequenceCollection_Class",
+  "url": "https://docs.derivative.ca/SequenceCollection_Class",
+  "content": {
+    "title": "SequenceCollection Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The OP to which this object belongs."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      }
+    }
+  }
+}

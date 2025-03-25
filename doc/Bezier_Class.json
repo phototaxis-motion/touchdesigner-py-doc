@@ -1,0 +1,61 @@
+{
+  "className": "Bezier_Class",
+  "url": "https://docs.derivative.ca/Bezier_Class",
+  "content": {
+    "title": "Bezier Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "anchors": {
+        "title": "",
+        "content": "anchors → list (Read Only): Returns the list of anchor vertices."
+      },
+      "basis": {
+        "title": "",
+        "content": "basis → list (Read Only): Return the bezier basis as a list of float values."
+      },
+      "closed": {
+        "title": "",
+        "content": "closed → bool : Get or set whether the curve is closed or open."
+      },
+      "order": {
+        "title": "",
+        "content": "order → float (Read Only): Return the bezier order. The order is one more than the degree."
+      },
+      "segments": {
+        "title": "",
+        "content": "segments → list (Read Only): Returns a list of segments, where each segment is a list of vertices."
+      },
+      "tangents": {
+        "title": "",
+        "content": "tangents → list (Read Only): Returns the tangents as a list of vertex pairs."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "insertAnchor": {
+        "title": "",
+        "content": "insertAnchor(u)→ Vertex: inserts anchor at given position (u from 0..1) and returns anchor vertex."
+      },
+      "updateAnchor": {
+        "title": "",
+        "content": "updateAnchor(anchorIndex, targetPosition, tangents=True)→ tdu.Position: Modify the anchor vertex to the new position. If tangents is True, modify neighboring tangent vertices as well. Returns resulting position."
+      },
+      "appendAnchor": {
+        "title": "",
+        "content": "appendAnchor(targetPosition, preserveShape=True)→ Vertex: Appends a set of vertices, creating a new segment on the curve, ending with the targetPosition.\nReturns final anchor vertex.\n\npreserveShape - (Keyword, Optional) Specifies whether the new tangent will align with the previous segment or not."
+      },
+      "updateTangent": {
+        "title": "",
+        "content": "updateTangent(tangentIndex, targetPosition, rotate=True, scale=True, rotateLock=True, scaleLock=True)→ tdu.Position: Modify the vertex vertex to the new position, constraining either rotation or scale. Locked controls matching tangent. Returns resulting position."
+      },
+      "deleteAnchor": {
+        "title": "",
+        "content": "deleteAnchor(anchorIndex)→ None: Deletes the anchor and its neighbouring tangents. TouchDesigner Build: Latest\\n2022.241402021.100002018.28070before 2018.28070"
+      }
+    }
+  }
+}

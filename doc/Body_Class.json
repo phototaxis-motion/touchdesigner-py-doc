@@ -1,0 +1,57 @@
+{
+  "className": "Body_Class",
+  "url": "https://docs.derivative.ca/Body_Class",
+  "content": {
+    "title": "Body Class",
+    "items": {
+      "Members": {
+        "title": "Members",
+        "content": ""
+      },
+      "index": {
+        "title": "",
+        "content": "index → int (Read Only): The index of this Body in its Actor COMP (owner)."
+      },
+      "owner": {
+        "title": "",
+        "content": "owner → OP (Read Only): The Actor COMP to which this body belongs."
+      },
+      "rotate": {
+        "title": "",
+        "content": "rotate → tdu.Vector : Get or set the body's rotation in world space."
+      },
+      "translate": {
+        "title": "",
+        "content": "translate → tdu.Position : Get or set the body's translation in world space."
+      },
+      "angularVelocity": {
+        "title": "",
+        "content": "angularVelocity → tdu.Vector : Get or set the body's angular velocity."
+      },
+      "linearVelocity": {
+        "title": "",
+        "content": "linearVelocity → tdu.Vector : Get or set the body's linear velocity."
+      },
+      "Methods": {
+        "title": "Methods",
+        "content": ""
+      },
+      "applyImpulseForce": {
+        "title": "",
+        "content": "applyImpulseForce(force, relPos=None)→ None: Applies impulse force to a body in a Bullet simulation.\nforce - The impulse force to apply to the body.\nrelPos (Keyword, Optional) - If specified, applies the force at the relative position, otherwise applied at (0,0,0)."
+      },
+      "applyTorque": {
+        "title": "",
+        "content": "applyTorque(torque)→ None: Applies torque to a body in a Bullet simulation. The torque will only be applied for a single frame.\ntorque - The torque to apply to the body this frame."
+      },
+      "applyImpulseTorque": {
+        "title": "",
+        "content": "applyImpulseTorque(torque)→ None: Applies impulse torque to a body in a Bullet simulation.\ntorque - The impulse torque to apply to the body."
+      },
+      "applyForce": {
+        "title": "",
+        "content": "applyForce(force, relPos=None)→ None: Applies force to a body in a Bullet simulation. The force will only be applied for a single frame.\nforce - The force to apply to the body this frame.\nrelPos (Keyword, Optional) - If specified, applies the force at the relative position, otherwise applied at (0,0,0). TouchDesigner Build: Latest\\n2022.241402021.100002019.146502018.28070"
+      }
+    }
+  }
+}
