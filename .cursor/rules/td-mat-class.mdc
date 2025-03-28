@@ -1,0 +1,15 @@
+---
+description: TouchDesigner材質操作符(MAT)相关类API参考
+globs: 
+alwaysApply: false
+---
+
+# TouchDesigner MAT组件相关类
+
+# 核心类
+MAT_Class: [MAT_Class.json](mdc:doc/MAT_Class.json)
+
+# MAT操作符类
+PhongMAT_Class: [PhongMAT_Class.json](mdc:doc/PhongMAT_Class.json)
+GlslMAT_Class: [GlslMAT_Class.json](mdc:doc/GlslMAT_Class.json)
+PbrMAT_Class: [PbrMAT_Class.json](mdc:doc/PbrMAT_Class.json)

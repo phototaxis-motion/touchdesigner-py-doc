@@ -1,0 +1,86 @@
+---
+description: TouchDesigner核心类和通用类API参考
+globs: 
+alwaysApply: false
+---
+
+# TouchDesigner 核心类和通用类
+
+TDFunctions: [TDFunctions.json](mdc:doc/TDFunctions.json)
+
+# 核心类
+
+COMP_Class: [COMP_Class.json](mdc:doc/COMP_Class.json)
+ObjectCOMP_Class: [ObjectCOMP_Class.json](mdc:doc/ObjectCOMP_Class.json)
+PanelCOMP_Class: [PanelCOMP_Class.json](mdc:doc/PanelCOMP_Class.json)
+Panel_Class: [Panel_Class.json](mdc:doc/Panel_Class.json)
+PanelValue_Class: [PanelValue_Class.json](mdc:doc/PanelValue_Class.json)
+Connector_Class: [Connector_Class.json](mdc:doc/Connector_Class.json)
+Page_Class: [Page_Class.json](mdc:doc/Page_Class.json)
+
+# 参数相关类
+
+ParCollection_Class: [ParCollection_Class.json](mdc:doc/ParCollection_Class.json)
+Par_Class: [Par_Class.json](mdc:doc/Par_Class.json)
+ParGroupCollection_Class: [ParGroupCollection_Class.json](mdc:doc/ParGroupCollection_Class.json)
+ParGroup_Class: [ParGroup_Class.json](mdc:doc/ParGroup_Class.json)
+
+# 序列相关类
+
+SequenceCollection_Class: [SequenceCollection_Class.json](mdc:doc/SequenceCollection_Class.json)
+Sequence_Class: [Sequence_Class.json](mdc:doc/Sequence_Class.json)
+SequenceBlock_Class: [SequenceBlock_Class.json](mdc:doc/SequenceBlock_Class.json)
+
+# 实用工具类
+
+AbsTime_Class: [AbsTime_Class.json](mdc:doc/AbsTime_Class.json)
+App_Class: [App_Class.json](mdc:doc/App_Class.json)
+Project_Class: [Project_Class.json](mdc:doc/Project_Class.json)
+ArcBall_Class: [ArcBall_Class.json](mdc:doc/ArcBall_Class.json)
+Camera_Class: [Camera_Class.json](mdc:doc/Camera_Class.json)
+Color_Class: [Color_Class.json](mdc:doc/Color_Class.json)
+Dependency_Class: [Dependency_Class.json](mdc:doc/Dependency_Class.json)
+Matrix_Class: [Matrix_Class.json](mdc:doc/Matrix_Class.json)
+Position_Class: [Position_Class.json](mdc:doc/Position_Class.json)
+Quaternion_Class: [Quaternion_Class.json](mdc:doc/Quaternion_Class.json)
+Timecode_Class: [Timecode_Class.json](mdc:doc/Timecode_Class.json)
+Vector_Class: [Vector_Class.json](mdc:doc/Vector_Class.json)
+
+# 系统相关类
+
+Licenses_Class: [Licenses_Class.json](mdc:doc/Licenses_Class.json)
+License_Class: [License_Class.json](mdc:doc/License_Class.json)
+DongleList_Class: [DongleList_Class.json](mdc:doc/DongleList_Class.json)
+Dongle_Class: [Dongle_Class.json](mdc:doc/Dongle_Class.json)
+ProductEntry_Class: [ProductEntry_Class.json](mdc:doc/ProductEntry_Class.json)
+MOD_Class: [MOD_Class.json](mdc:doc/MOD_Class.json)
+Monitors_Class: [Monitors_Class.json](mdc:doc/Monitors_Class.json)
+Monitor_Class: [Monitor_Class.json](mdc:doc/Monitor_Class.json)
+Runs_Class: [Runs_Class.json](mdc:doc/Runs_Class.json)
+Run_Class: [Run_Class.json](mdc:doc/Run_Class.json)
+SysInfo_Class: [SysInfo_Class.json](mdc:doc/SysInfo_Class.json)
+UI_Class: [UI_Class.json](mdc:doc/UI_Class.json)
+Colors_Class: [Colors_Class.json](mdc:doc/Colors_Class.json)
+Options_Class: [Options_Class.json](mdc:doc/Options_Class.json)
+Panes_Class: [Panes_Class.json](mdc:doc/Panes_Class.json)
+Pane_Class: [Pane_Class.json](mdc:doc/Pane_Class.json)
+NetworkEditor_Class: [NetworkEditor_Class.json](mdc:doc/NetworkEditor_Class.json)
+Preferences_Class: [Preferences_Class.json](mdc:doc/Preferences_Class.json)
+Undo_Class: [Undo_Class.json](mdc:doc/Undo_Class.json)
+VFS_Class: [VFS_Class.json](mdc:doc/VFS_Class.json)
+VFSFile_Class: [VFSFile_Class.json](mdc:doc/VFSFile_Class.json)
+
+# 列表相关类
+
+ListAttributes_Class: [ListAttributes_Class.json](mdc:doc/ListAttributes_Class.json)
+ListAttribute_Class: [ListAttribute_Class.json](mdc:doc/ListAttribute_Class.json)
+ListCOMP_Class: [ListCOMP_Class.json](mdc:doc/ListCOMP_Class.json)
+
+# 物理引擎相关类
+
+Actors_Class: [Actors_Class.json](mdc:doc/Actors_Class.json)
+BulletsolverCOMP_Class: [BulletsolverCOMP_Class.json](mdc:doc/BulletsolverCOMP_Class.json)
+FlexsolverCOMP_Class: [FlexsolverCOMP_Class.json](mdc:doc/FlexsolverCOMP_Class.json)
+Bodies_Class: [Bodies_Class.json](mdc:doc/Bodies_Class.json)
+Body_Class: [Body_Class.json](mdc:doc/Body_Class.json)
+ActorCOMP_Class: [ActorCOMP_Class.json](mdc:doc/ActorCOMP_Class.json)
